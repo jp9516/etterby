@@ -1,0 +1,11 @@
+
+---
+layout: default
+---
+<section class="container mx-auto px-6 py-16">
+  <h1 class="text-3xl md:text-4xl font-semibold">{{ page.title }}</h1>
+  <p class="opacity-70 text-sm mt-2">{{ page.date | date: "%-d %B %Y" }}</p>
+  <article class="prose prose-invert mt-6 max-w-none">
+    {{ content }}
+  </article>
+</section>

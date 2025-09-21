@@ -1,0 +1,39 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: {
+        brandblack: "#0B0B0C",
+        brandoff: "#F6F7F9",
+        brandblue: "#1E5FFF",
+        brandyellow: "#FFC300"
+      } } }
+    }
+  </script>
+  <style>
+    :root{ --black:#0B0B0C; --off:#F6F7F9; --blue:#1E5FFF; --yellow:#FFC300; }
+    html{ scroll-behavior:smooth; }
+    .container{ max-width:1120px; }
+  </style>
+</head>
+<body class="bg-brandblack text-brandoff antialiased">
+  {% include header.html %}
+  <main class="min-h-[50vh]">{{ content }}</main>
+  {% include footer.html %}
+</body>
+</html>

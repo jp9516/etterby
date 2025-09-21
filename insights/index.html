@@ -1,0 +1,16 @@
+
+---
+layout: default
+title: "Insights"
+---
+<section class="container mx-auto px-6 py-16">
+  <h1 class="text-3xl md:text-4xl font-semibold mb-6">Insights</h1>
+  <div class="grid md:grid-cols-3 gap-6">
+    {% for post in site.posts %}
+      <article class="p-6 rounded-2xl border border-white/10">
+        <h3 class="font-semibold mb-2"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p class="text-sm opacity-90">{{ post.excerpt | strip_html | truncate: 140 }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>

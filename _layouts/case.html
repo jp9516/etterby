@@ -1,0 +1,17 @@
+
+---
+layout: default
+---
+<section class="container mx-auto px-6 py-16">
+  <h1 class="text-3xl md:text-4xl font-semibold">{{ page.title }}</h1>
+  <p class="opacity-80 mt-2">{{ page.client }}</p>
+  <div class="grid md:grid-cols-3 gap-6 mt-6">
+    <div class="md:col-span-2 prose prose-invert max-w-none">{{ content }}</div>
+    <aside class="p-6 rounded-2xl border border-white/10">
+      <h3 class="font-semibold">At a glance</h3>
+      <ul class="list-disc ml-5 mt-2 text-sm opacity-90 space-y-1">
+        {% for item in page.highlights %}<li>{{ item }}</li>{% endfor %}
+      </ul>
+    </aside>
+  </div>
+</section>
