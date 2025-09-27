@@ -1,7 +1,7 @@
 
 title: "Etterby Analytics"
 description: "Premium, minimal, outcomes-first analytics consulting. Pipelines, metrics, and ML that ship and stick."
-url: ""  # set to https://etterby.com when live
+url: "https://etterby.com"  # set to https://etterby.com when live
 baseurl: ""  # set to /analytics only if using subpath
 markdown: kramdown
 theme: null
