@@ -15,6 +15,71 @@ description: "Consultancy engagements covering data platforms, analytics, experi
   </div>
 {% endcapture %}
 
+{% capture services_snapshot %}
+  <div class="space-y-6">
+    <div class="space-y-2">
+      <h2 class="text-xl font-semibold">Service snapshot</h2>
+      <p class="text-sm opacity-80">Match each engagement to the situation, delivery cadence, and outcome it is designed to deliver.</p>
+    </div>
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+      {% for service in services %}
+        {% assign snapshot_use_case = "" %}
+        {% assign snapshot_timeline = "" %}
+        {% assign snapshot_outcome = "" %}
+        {% case service.title %}
+          {% when "Data Platforms & Reliability" %}
+            {% assign snapshot_use_case = "Scaling teams that need resilient ELT, governed models, and trustworthy metrics." %}
+            {% assign snapshot_timeline = "Readiness audit → modular dbt rollout → observability with shared SLAs." %}
+            {% assign snapshot_outcome = "Self-healing platform with visibility into freshness, lineage, and quality." %}
+          {% when "Tagging & Digital Analytics Foundations" %}
+            {% assign snapshot_use_case = "Marketing and product leaders stabilising GA4, consent, and cross-journey tracking." %}
+            {% assign snapshot_timeline = "Instrumentation audit → journey mapping → prioritised GTM backlog and owners." %}
+            {% assign snapshot_outcome = "Robust tagging and consent data powering confident campaign optimisation." %}
+          {% when "Analytics, BI & Enablement" %}
+            {% assign snapshot_use_case = "Organisations aligning KPI definitions and enabling teams with governed semantic layers." %}
+            {% assign snapshot_timeline = "Decision mapping → semantic layer design → high-impact dashboards and training." %}
+            {% assign snapshot_outcome = "Shared metrics and adopted analytics that replace ad-hoc requests." %}
+          {% when "Self-Service Dashboards & Embedded Analytics" %}
+            {% assign snapshot_use_case = "Operators needing daily rituals and embedded analytics that answer follow-up questions." %}
+            {% assign snapshot_timeline = "Stakeholder interviews → persona prioritisation → modelling and performance tuning." %}
+            {% assign snapshot_outcome = "Executive and embedded dashboards with clear ownership and enablement assets." %}
+          {% when "Experimentation, Forecasting & Applied ML" %}
+            {% assign snapshot_use_case = "Teams taking decisions with production ML, forecasting, or experiment programmes tied to KPIs." %}
+            {% assign snapshot_timeline = "Decision framing → data and test audit → phased delivery balancing exploration and enablement." %}
+            {% assign snapshot_outcome = "Production models and automated read-outs with playbooks for monitoring and retraining." %}
+          {% when "Revenue & Lifecycle Intelligence" %}
+            {% assign snapshot_use_case = "Pricing, retention, and lifecycle motions aiming for measurable P&L impact." %}
+            {% assign snapshot_timeline = "Revenue motion discovery → historic test audit → co-created roadmap across modelling & comms." %}
+            {% assign snapshot_outcome = "Revenue-shaping recommendations with aligned forecasts and executive storytelling." %}
+        {% endcase %}
+        {% capture snapshot_item %}
+          <div class="space-y-3">
+            <div class="space-y-1">
+              <p class="text-xs uppercase tracking-wide opacity-70">{{ service.tagline }}</p>
+              <h3 class="font-semibold text-base"><a href="{{ service.url }}">{{ service.title }}</a></h3>
+            </div>
+            <ul class="space-y-2 text-sm opacity-90">
+              <li>
+                <p class="text-xs uppercase tracking-wide opacity-70">Ideal use case</p>
+                <p>{{ snapshot_use_case }}</p>
+              </li>
+              <li>
+                <p class="text-xs uppercase tracking-wide opacity-70">Typical timeline</p>
+                <p>{{ snapshot_timeline }}</p>
+              </li>
+              <li>
+                <p class="text-xs uppercase tracking-wide opacity-70">Headline outcome</p>
+                <p>{{ snapshot_outcome }}</p>
+              </li>
+            </ul>
+          </div>
+        {% endcapture %}
+        {% include panel.html tone="ink" padding="p-5" content=snapshot_item %}
+      {% endfor %}
+    </div>
+  </div>
+{% endcapture %}
+
 {% capture services_cards %}
   <div class="grid md:grid-cols-2 gap-6">
     {% for service in services %}
@@ -46,6 +111,7 @@ description: "Consultancy engagements covering data platforms, analytics, experi
 {% capture services_section %}
   <div class="space-y-10">
     {{ services_intro }}
+    {% include section.html tone="frost" padding="p-0" content=services_snapshot %}
     {{ services_cards }}
   </div>
 {% endcapture %}
