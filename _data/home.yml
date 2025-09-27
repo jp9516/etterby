@@ -9,7 +9,7 @@ work:
   description: "Case studies covering fraud reduction, price optimisation, and analytics enablement across marketplaces and SaaS."
   limit: 2
   view_all:
-    label: "Browse work"
+    label: "Explore all work"
     url: "/work/"
 insights:
   title: "Latest insights"
