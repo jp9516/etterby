@@ -1,25 +1,91 @@
-<footer class="border-t border-brandblue/30 bg-gradient-to-r from-brandblack via-brandblue/20 to-brandblack">
-  <div class="container mx-auto px-6 py-12 text-sm text-white/70 flex flex-wrap items-center gap-x-6 gap-y-3">
-    <span class="uppercase tracking-[0.2em] text-xs text-white/50">Etterby</span>
-    <span class="h-3 w-px bg-white/20"></span>
+<footer class="border-t border-brandblue/20 bg-gradient-to-r from-white via-brandblue/10 to-white dark:border-brandblue/30 dark:from-brandblack dark:via-brandblue/20 dark:to-brandblack transition-colors">
+  <div class="container mx-auto px-6 py-12 text-sm text-brandblack/70 dark:text-white/70 flex flex-wrap items-center gap-x-6 gap-y-3">
+    <span class="uppercase tracking-[0.2em] text-xs text-brandblack/50 dark:text-white/50">Etterby</span>
+    <span class="h-3 w-px bg-brandblack/20 dark:bg-white/20"></span>
     <span>© {{ site.time | date: "%Y" }} Etterby Analytics Ltd</span>
     <span>·</span>
-    <a href="/privacy/" class="hover:text-white transition">Privacy</a>
+    <a href="/privacy/" class="hover:text-brandblack dark:hover:text-white transition">Privacy</a>
     <span>·</span>
-    <a href="/terms/" class="hover:text-white transition">Terms</a>
+    <a href="/terms/" class="hover:text-brandblack dark:hover:text-white transition">Terms</a>
     <span>·</span>
-    <a href="https://www.linkedin.com/in/james-pearson-etterby" class="hover:text-white transition" target="_blank" rel="noopener">LinkedIn</a>
-    <span class="md:ml-auto text-white/60">Analytics leadership since 2012</span>
+    <a href="https://www.linkedin.com/in/james-pearson-etterby" class="hover:text-brandblack dark:hover:text-white transition" target="_blank" rel="noopener">LinkedIn</a>
+    <span class="md:ml-auto text-brandblack/60 dark:text-white/60">Analytics leadership since 2012</span>
   </div>
 </footer>
 <script>
-  const navToggle = document.getElementById('navToggle');
-  const mobileNav = document.getElementById('mobileNav');
-  if (navToggle && mobileNav) {
-    navToggle.addEventListener('click', () => {
-      mobileNav.classList.toggle('hidden');
-      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-      navToggle.setAttribute('aria-expanded', (!expanded).toString());
-    });
-  }
+  (function() {
+    const storageKey = 'preferred-theme';
+    const root = document.documentElement;
+    const meta = document.getElementById('theme-color-meta');
+    const navToggle = document.getElementById('navToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    const themeButtons = document.querySelectorAll('[data-theme-toggle]');
+
+    const applyTheme = (mode) => {
+      const isDark = mode === 'dark';
+      root.classList.toggle('dark', isDark);
+      root.dataset.theme = isDark ? 'dark' : 'light';
+      if (meta) {
+        meta.setAttribute('content', isDark ? '#0B0B0C' : '#F6F7F9');
+      }
+      if (themeButtons.length) {
+        themeButtons.forEach((button) => {
+          const label = button.querySelector('[data-theme-toggle-label]');
+          if (label) {
+            label.textContent = isDark ? 'Light mode' : 'Dark mode';
+          }
+          button.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+        });
+      }
+    };
+
+    const getStoredTheme = () => {
+      try {
+        return localStorage.getItem(storageKey);
+      } catch (error) {
+        return null;
+      }
+    };
+
+    const storeTheme = (mode) => {
+      try {
+        localStorage.setItem(storageKey, mode);
+      } catch (error) {
+        /* noop */
+      }
+    };
+
+    const currentPreference = getStoredTheme();
+    if (currentPreference) {
+      applyTheme(currentPreference);
+    } else {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+      applyTheme(prefersDark.matches ? 'dark' : 'light');
+      prefersDark.addEventListener('change', (event) => {
+        const stored = getStoredTheme();
+        if (!stored) {
+          applyTheme(event.matches ? 'dark' : 'light');
+        }
+      });
+    }
+
+    if (themeButtons.length) {
+      themeButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const isDark = root.classList.contains('dark');
+          const next = isDark ? 'light' : 'dark';
+          applyTheme(next);
+          storeTheme(next);
+        });
+      });
+    }
+
+    if (navToggle && mobileNav) {
+      navToggle.addEventListener('click', () => {
+        mobileNav.classList.toggle('hidden');
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', (!expanded).toString());
+      });
+    }
+  })();
 </script>

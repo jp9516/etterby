@@ -21,7 +21,7 @@ description: "Discover James Pearson's CV, values, and the analytics outcomes de
       {% capture profile_panel %}
         <div class="space-y-3">
           <h2 class="text-2xl font-semibold">{{ page_content.profile.title }}</h2>
-          <p class="text-sm uppercase tracking-wide text-white/70">{{ page_content.profile.name }}</p>
+          <p class="text-sm uppercase tracking-wide text-brandblack/70 dark:text-white/70">{{ page_content.profile.name }}</p>
           <ul class="space-y-3 text-sm opacity-90">
             {% for item in page_content.profile.bio %}
               <li>• {{ item }}</li>
@@ -66,7 +66,7 @@ description: "Discover James Pearson's CV, values, and the analytics outcomes de
       {% capture contact_panel %}
         <div class="space-y-3 text-center">
           <h2 class="text-lg font-semibold">Ready to collaborate?</h2>
-          <p class="text-sm text-white/70">Discuss your analytics roadmap and the momentum we can unlock.</p>
+          <p class="text-sm text-brandblack/70 dark:text-white/70">Discuss your analytics roadmap and the momentum we can unlock.</p>
           <a href="{{ page_content.contact_cta.url }}" class="inline-flex justify-center px-5 py-3 bg-brandblue text-white rounded-xl">{{ page_content.contact_cta.label }}</a>
         </div>
       {% endcapture %}
@@ -82,7 +82,7 @@ description: "Discover James Pearson's CV, values, and the analytics outcomes de
       <h2 class="text-2xl font-semibold">{{ page_content.cv.title }}</h2>
       <p class="opacity-80">{{ page_content.cv.intro }}</p>
     </div>
-    <a href="{{ page_content.cv.download.url }}" class="inline-flex items-center justify-center px-5 py-3 border border-white/30 rounded-xl text-sm uppercase tracking-wide">{{ page_content.cv.download.label }}</a>
+    <a href="{{ page_content.cv.download.url }}" class="inline-flex items-center justify-center px-5 py-3 border border-brandblack/30 dark:border-white/30 rounded-xl text-sm uppercase tracking-wide">{{ page_content.cv.download.label }}</a>
   </div>
 {% endcapture %}
 
@@ -127,7 +127,7 @@ description: "Discover James Pearson's CV, values, and the analytics outcomes de
         <ul class="space-y-3 text-sm opacity-90">
           {% for skill in page_content.cv.skills.categories %}
             <li>
-              <span class="block font-semibold text-white">{{ skill.name }}</span>
+              <span class="block font-semibold text-brandblack dark:text-white">{{ skill.name }}</span>
               <span>{{ skill.detail }}</span>
             </li>
           {% endfor %}

@@ -10,23 +10,23 @@ description: "Reliable pipelines, clear metrics, and practical ML for product an
     <p class="text-lg max-w-2xl">
       I run a Carlisle analytics consultancy that helps product and operations teams across Cumbria, throughout the UK, and select global partners ship reliable data pipelines, clear metrics, and practical ML – without drama.
     </p>
-    <div class="flex flex-wrap gap-3 text-sm md:text-base text-white/80">
-      <div class="px-4 py-2 rounded-xl border border-white/10 bg-white/5">
-        <span class="block font-semibold text-white">Fraud cut 10% → 0.6%</span>
-        <span class="block text-xs md:text-sm text-white/70">Marketplace (EU) trust &amp; safety</span>
+    <div class="flex flex-wrap gap-3 text-sm md:text-base text-brandblack/80 dark:text-white/80">
+      <div class="px-4 py-2 rounded-xl border border-brandblack/10 bg-brandblack/5 dark:border-white/10 dark:bg-white/5">
+        <span class="block font-semibold text-brandblack dark:text-white">Fraud cut 10% → 0.6%</span>
+        <span class="block text-xs md:text-sm text-brandblack/70 dark:text-white/70">Marketplace (EU) trust &amp; safety</span>
       </div>
-      <div class="px-4 py-2 rounded-xl border border-white/10 bg-white/5">
-        <span class="block font-semibold text-white">+10% daily revenue uplift</span>
-        <span class="block text-xs md:text-sm text-white/70">Xcelirate pricing science</span>
+      <div class="px-4 py-2 rounded-xl border border-brandblack/10 bg-brandblack/5 dark:border-white/10 dark:bg-white/5">
+        <span class="block font-semibold text-brandblack dark:text-white">+10% daily revenue uplift</span>
+        <span class="block text-xs md:text-sm text-brandblack/70 dark:text-white/70">Xcelirate pricing science</span>
       </div>
-      <div class="px-4 py-2 rounded-xl border border-white/10 bg-white/5">
-        <span class="block font-semibold text-white">Self-serve usage tripled</span>
-        <span class="block text-xs md:text-sm text-white/70">Series C SaaS metrics layer</span>
+      <div class="px-4 py-2 rounded-xl border border-brandblack/10 bg-brandblack/5 dark:border-white/10 dark:bg-white/5">
+        <span class="block font-semibold text-brandblack dark:text-white">Self-serve usage tripled</span>
+        <span class="block text-xs md:text-sm text-brandblack/70 dark:text-white/70">Series C SaaS metrics layer</span>
       </div>
     </div>
     <div class="flex flex-wrap gap-4">
-      <a href="/contact/" class="px-5 py-3 bg-brandblue text-white rounded-xl">Book a call</a>
-      <a href="/services/" class="px-5 py-3 border border-white/30 rounded-xl">View services</a>
+      <a href="/contact/" class="px-5 py-3 bg-brandblue text-white rounded-xl hover:bg-brandblue/90 transition">Book a call</a>
+      <a href="/services/" class="px-5 py-3 border border-brandblack/30 dark:border-white/30 rounded-xl hover:border-brandblue/60 transition">View services</a>
     </div>
   </div>
 {% endcapture %}
@@ -39,7 +39,7 @@ description: "Reliable pipelines, clear metrics, and practical ML for product an
       <h2 class="text-3xl font-semibold">{{ home_services.title }}</h2>
       <p class="mt-2 opacity-80 max-w-2xl">{{ home_services.description }}</p>
     </div>
-    <a href="{{ home_services.view_all.url }}" class="inline-flex px-5 py-3 bg-brandblue text-white rounded-xl text-sm uppercase tracking-wide">{{ home_services.view_all.label }}</a>
+    <a href="{{ home_services.view_all.url }}" class="inline-flex px-5 py-3 bg-brandblue text-white rounded-xl text-sm uppercase tracking-wide hover:bg-brandblue/90 transition">{{ home_services.view_all.label }}</a>
   </div>
 {% endcapture %}
 {% assign services = site.services | sort: 'position' %}
@@ -55,7 +55,7 @@ description: "Reliable pipelines, clear metrics, and practical ML for product an
           {% if service.focus %}
             <ul class="mt-auto text-xs uppercase tracking-wide opacity-70 flex flex-wrap gap-2">
               {% for item in service.focus %}
-                <li class="px-2 py-1 rounded-full border border-white/10">{{ item }}</li>
+                <li class="px-2 py-1 rounded-full border border-brandblack/20 dark:border-white/10">{{ item }}</li>
               {% endfor %}
             </ul>
           {% endif %}
@@ -80,7 +80,7 @@ description: "Reliable pipelines, clear metrics, and practical ML for product an
       <h2 class="text-3xl font-semibold">{{ home_work.title }}</h2>
       <p class="mt-2 opacity-80 max-w-2xl">{{ home_work.description }}</p>
     </div>
-    <a href="{{ home_work.view_all.url }}" class="inline-flex px-5 py-3 bg-brandblue text-white rounded-xl text-sm uppercase tracking-wide">{{ home_work.view_all.label }}</a>
+    <a href="{{ home_work.view_all.url }}" class="inline-flex px-5 py-3 bg-brandblue text-white rounded-xl text-sm uppercase tracking-wide hover:bg-brandblue/90 transition">{{ home_work.view_all.label }}</a>
   </div>
 {% endcapture %}
 {% assign featured_work = site.work | where_exp: 'item', 'item.featured != false' | sort: 'position' %}

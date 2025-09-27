@@ -6,14 +6,14 @@
   {% when 'plain' %}
     {% assign outer_classes = outer_classes %}
   {% when 'frost' %}
-    {% assign outer_classes = outer_classes | append: ' bg-white/5 border-y border-white/5' %}
+    {% assign outer_classes = outer_classes | append: ' bg-brandblack/5 border-y border-brandblack/10 dark:bg-white/5 dark:border-white/5' %}
   {% when 'ink' %}
-    {% assign outer_classes = outer_classes | append: ' bg-brandblack/80 border-y border-white/10' %}
+    {% assign outer_classes = outer_classes | append: ' bg-white border-y border-brandblack/10 dark:bg-brandblack/80 dark:border-white/10' %}
   {% when 'blue' %}
-    {% assign outer_classes = outer_classes | append: ' bg-brandblue/10 border-y border-brandblue/20' %}
+    {% assign outer_classes = outer_classes | append: ' bg-brandblue/5 border-y border-brandblue/20 dark:bg-brandblue/10' %}
   {% when 'glow' %}
     {% assign outer_classes = outer_classes | append: ' overflow-hidden' %}
-    {% assign overlay = 'bg-gradient-to-br from-brandblue/15 via-transparent to-white/10' %}
+    {% assign overlay = 'bg-gradient-to-br from-brandblue/15 via-transparent to-brandblack/10 dark:to-white/10' %}
   {% else %}
     {% assign outer_classes = outer_classes %}
 {% endcase %}
