@@ -5,7 +5,7 @@
   "display": "standalone",
   "background_color": "#0B0B0C",
   "theme_color": "#0B0B0C",
-  "description": "Independent analytics consultancy led by James Pearson delivering data platforms, experimentation, and forecasting.",
+  "description": "Independent analytics consultancy delivering data platforms, experimentation, and forecasting.",
   "icons": [
     {
       "src": "/assets/og-image.png",

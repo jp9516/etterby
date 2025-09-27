@@ -8,22 +8,8 @@ description: "Reliable pipelines, clear metrics, and practical ML for product an
   <div class="space-y-8">
     <h1 class="text-5xl md:text-6xl font-semibold leading-tight">Analytics that drive outcomes.</h1>
     <p class="text-lg max-w-2xl">
-      I run a Carlisle analytics consultancy that helps product and operations teams across Cumbria, throughout the UK, and select global partners ship reliable data pipelines, clear metrics, and practical ML – without drama.
+      Etterby Analytics is a Carlisle-based consultancy that helps product and operations teams across Cumbria, throughout the UK, and select global partners ship reliable data pipelines, clear metrics, and practical ML – without drama.
     </p>
-    <div class="flex flex-wrap gap-3 text-sm md:text-base text-brandblack/80 dark:text-white/80">
-      <div class="px-4 py-2 rounded-xl border border-brandblack/10 bg-brandblack/5 dark:border-white/10 dark:bg-white/5">
-        <span class="block font-semibold text-brandblack dark:text-white">Fraud cut 10% → 0.6%</span>
-        <span class="block text-xs md:text-sm text-brandblack/70 dark:text-white/70">Marketplace (EU) trust &amp; safety</span>
-      </div>
-      <div class="px-4 py-2 rounded-xl border border-brandblack/10 bg-brandblack/5 dark:border-white/10 dark:bg-white/5">
-        <span class="block font-semibold text-brandblack dark:text-white">+10% daily revenue uplift</span>
-        <span class="block text-xs md:text-sm text-brandblack/70 dark:text-white/70">Xcelirate pricing science</span>
-      </div>
-      <div class="px-4 py-2 rounded-xl border border-brandblack/10 bg-brandblack/5 dark:border-white/10 dark:bg-white/5">
-        <span class="block font-semibold text-brandblack dark:text-white">Self-serve usage tripled</span>
-        <span class="block text-xs md:text-sm text-brandblack/70 dark:text-white/70">Series C SaaS metrics layer</span>
-      </div>
-    </div>
     <div class="flex flex-wrap gap-4">
       <a href="/contact/" class="px-5 py-3 bg-brandblue text-white rounded-xl hover:bg-brandblue/90 transition">Book a call</a>
       <a href="/services/" class="px-5 py-3 border border-brandblack/30 dark:border-white/30 rounded-xl hover:border-brandblue/60 transition">View services</a>

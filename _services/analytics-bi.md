@@ -10,7 +10,7 @@ focus:
   - Enablement
 ---
 
-**Where we start**
+**Where each engagement starts**
 - Map critical decisions, data sources, and the definitions that are currently disputed
 - Design a governed semantic layer or ThoughtSpot/BI model that reflects how teams operate
 - Prioritise the dashboards, alerts, and self-serve journeys that matter for revenue and operations

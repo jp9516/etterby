@@ -9,7 +9,7 @@ duration: "10 weeks"
 position: 5
 featured: false
 summary: "Delivered dynamic pricing and forecasting models that lifted daily revenue by 10%."
-description: "James Pearson combined experimentation, predictive modelling, and stakeholder enablement to embed pricing science into commercial planning."
+description: "Founder-led experimentation, predictive modelling, and stakeholder enablement embedded pricing science into commercial planning."
 results:
   - "+10% daily revenue uplift within six weeks of launch."
   - "Automated revenue and user forecasts consumed by finance and leadership."

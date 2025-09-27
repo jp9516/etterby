@@ -10,7 +10,7 @@ focus:
   - Lifecycle
 ---
 
-**Where we start**
+**Where each engagement starts**
 - Understand the revenue motions, lifecycle triggers, and decisions you need to influence
 - Audit historic pricing tests, retention cohorts, and data availability
 - Co-create a roadmap covering modelling, experimentation, and communication milestones

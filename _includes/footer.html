@@ -8,7 +8,7 @@
     <span>·</span>
     <a href="/terms/" class="hover:text-brandblack dark:hover:text-white transition">Terms</a>
     <span>·</span>
-    <a href="https://www.linkedin.com/in/james-pearson-etterby" class="hover:text-brandblack dark:hover:text-white transition" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.linkedin.com/company/etterby-analytics/" class="hover:text-brandblack dark:hover:text-white transition" target="_blank" rel="noopener">LinkedIn</a>
     <span class="md:ml-auto text-brandblack/60 dark:text-white/60">Analytics leadership since 2012</span>
   </div>
 </footer>
@@ -59,14 +59,7 @@
     if (currentPreference) {
       applyTheme(currentPreference);
     } else {
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-      applyTheme(prefersDark.matches ? 'dark' : 'light');
-      prefersDark.addEventListener('change', (event) => {
-        const stored = getStoredTheme();
-        if (!stored) {
-          applyTheme(event.matches ? 'dark' : 'light');
-        }
-      });
+      applyTheme('light');
     }
 
     if (themeButtons.length) {

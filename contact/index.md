@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Contact"
-description: "Start a conversation with James Pearson about analytics, experimentation, or forecasting engagements."
+description: "Start a conversation with Etterby Analytics about analytics, experimentation, or forecasting engagements."
 ---
 {% capture contact_intro %}
   <div class="max-w-2xl space-y-3">
@@ -39,9 +39,9 @@ description: "Start a conversation with James Pearson about analytics, experimen
       <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div class="space-y-1">
           <p class="font-medium text-brandblack/90 dark:text-white/90">Connect on LinkedIn</p>
-          <p class="text-sm text-brandblack/60 dark:text-white/60">Stay up to date with analytics insights and message James directly.</p>
+          <p class="text-sm text-brandblack/60 dark:text-white/60">Stay up to date with analytics insights and contact the Etterby Analytics team.</p>
         </div>
-        <a href="https://www.linkedin.com/in/james-pearson-etterby" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg border border-brandblack/20 text-brandblack/80 hover:text-brandblue dark:border-white/20 dark:text-white/80 dark:hover:text-white transition" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/company/etterby-analytics/" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg border border-brandblack/20 text-brandblack/80 hover:text-brandblue dark:border-white/20 dark:text-white/80 dark:hover:text-white transition" target="_blank" rel="noopener">
           <span>View profile</span>
         </a>
       </div>

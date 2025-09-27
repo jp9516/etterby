@@ -3,14 +3,14 @@ title: "Experimentation, Forecasting & Applied ML"
 position: 5
 tagline: "Practical models and test programmes tied directly to commercial metrics."
 summary: "Frame the decision, design robust experiments or models, and keep them accountable in production."
-description: "From fraud detection to revenue forecasting, every build is anchored in James Pearson's decade leading decision science."
+description: "From fraud detection to revenue forecasting, every build is anchored in a decade of founder-led decision science delivery."
 focus:
   - Experimentation
   - Forecasting
   - Decision Science
 ---
 
-**Where we start**
+**Where each engagement starts**
 - Quantify the decision, counterfactual, and target KPIs with stakeholders
 - Audit data availability, labelling, and historic experiments to ground the roadmap
 - Design delivery phases that balance exploration, productionisation, and enablement

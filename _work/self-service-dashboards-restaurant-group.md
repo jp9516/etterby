@@ -9,7 +9,7 @@ duration: "14 weeks"
 position: 2
 featured: true
 summary: "Delivered franchise performance dashboards and enablement that unlocked daily self-serve usage."
-description: "James Pearson partnered with Subway International and Vita Mojo to redesign analytics for franchise owners and operator teams, pairing KPI storytelling with technical delivery."
+description: "Founder-led partnership with Subway International and Vita Mojo to redesign analytics for franchise owners and operator teams, pairing KPI storytelling with technical delivery."
 results:
   - "Franchisee dashboards adopted across 20+ markets with role-based navigation and automated commentary."
   - "Daily active users tripled as operators relied on guided analyses for staffing, menu, and promotions."
@@ -27,4 +27,4 @@ Operators were overwhelmed by ad-hoc spreadsheets and slow dashboards, making it
 ### Outcome
 - Weekly franchise reviews anchored on consistent dashboards and alerts
 - Reduced analyst support tickets as owners self-served diagnostics and exported recommendations
-- Ongoing roadmap owned by internal teams with James advising on quarterly enhancements
+- Ongoing roadmap owned by internal teams with the founder advising on quarterly enhancements
