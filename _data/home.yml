@@ -1,12 +1,12 @@
 services:
   title: "Services"
-  description: "Engagements led by James Pearson to modernise data platforms, run experimentation programmes, and ship predictive models."
+  description: "Engagements led from Carlisle by James Pearson to modernise data platforms, run experimentation programmes, and ship predictive models for teams across Cumbria, the wider UK, and select global partners."
   view_all:
     label: "Explore all services"
     url: "/services/"
 work:
   title: "Selected work"
-  description: "Case studies covering fraud reduction, price optimisation, and analytics enablement across marketplaces and SaaS."
+  description: "Case studies covering fraud reduction, price optimisation, and analytics enablement for organisations across Cumbria, UK scale-ups, and select global marketplaces."
   limit: 2
   view_all:
     label: "Explore all work"

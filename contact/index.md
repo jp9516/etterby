@@ -7,7 +7,7 @@ description: "Start a conversation with James Pearson about analytics, experimen
 {% capture contact_intro %}
   <div class="max-w-2xl space-y-3">
     <h1 class="text-3xl md:text-4xl font-semibold">Contact</h1>
-    <p class="opacity-90 text-sm">Usually replies within 24h. UK/EU friendly.</p>
+    <p class="opacity-90 text-sm">Carlisle-based sessions are available across Cumbria, with remote support prioritising UK teams while staying open to select global partners.</p>
   </div>
 {% endcapture %}
 
