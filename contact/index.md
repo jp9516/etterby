@@ -12,7 +12,7 @@ description: "Start a conversation with James Pearson about analytics, experimen
 {% endcapture %}
 
 {% capture contact_form %}
-  <form action="https://formspree.io/f/your-id" method="POST" class="grid md:grid-cols-2 gap-4">
+  <form action="https://formspree.io/f/xovkjwgg" method="POST" class="grid md:grid-cols-2 gap-4">
     <input type="text" name="name" placeholder="Name" class="bg-brandblack/70 border border-white/20 rounded-lg px-4 py-3 focus:border-brandblue focus:outline-none" required>
     <input type="email" name="email" placeholder="Work email" class="bg-brandblack/70 border border-white/20 rounded-lg px-4 py-3 focus:border-brandblue focus:outline-none" required>
     <input type="text" name="company" placeholder="Company" class="bg-brandblack/70 border border-white/20 rounded-lg px-4 py-3 md:col-span-2 focus:border-brandblue focus:outline-none">
