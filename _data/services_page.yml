@@ -1,9 +1,9 @@
 hero:
-  eyebrow: "How we help"
+  eyebrow: "How Etterby Analytics helps"
   title: "Embedded analytics leadership for complex decisions"
   description:
-    - "James Pearson works hands-on from Carlisle with your product, operations, and finance teams to deliver the data foundations, decision science, and enablement UK-first companies need to move faster."
-    - "On-site sessions across Cumbria pair with remote collaboration that prioritises UK teams while remaining open to select global partners, with engagements scoped around measurable outcomes - fraud reduction, revenue uplift, adoption - and coaching for your internal teams."
+    - "Etterby Analytics embeds founder-led analytics leadership with your product, operations, and finance teams to deliver the data foundations, decision science, and enablement UK-first companies need to move faster."
+    - "On-site sessions across Cumbria pair with remote collaboration for organisations across the UK and select global partners, with engagements scoped around measurable outcomes such as fraud reduction, revenue uplift, or adoption."
     - "Recent work spans GA4 instrumentation, self-serve dashboard design, and executive storytelling for global restaurant and retail brands."
 service_models:
   title: "Common engagement patterns"
@@ -18,7 +18,7 @@ service_models:
       duration: "Quarterly engagement"
       detail: "Ongoing partnership covering forecasting, pricing optimisation, and executive enablement with a clear cadence of deliverables."
 collaboration:
-  title: "How we collaborate"
+  title: "How Etterby Analytics collaborates"
   points:
     - "Dedicated Slack channel with <24h async response times"
     - "Weekly steering with conversion, revenue, or fraud metrics reviewed against targets"

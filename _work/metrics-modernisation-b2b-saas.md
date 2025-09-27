@@ -9,7 +9,7 @@ duration: "12 weeks"
 position: 3
 featured: true
 summary: "Delivered a governed metrics layer and ThoughtSpot rollout that aligned revenue and product teams."
-description: "James Pearson led the KPI framework, modelling, and enablement that standardised reporting for internal teams and enterprise restaurant brands."
+description: "Founder-led delivery across KPI frameworks, modelling, and enablement that standardised reporting for internal teams and enterprise restaurant brands."
 results:
   - "Unified metric definitions adopted by finance, sales, and product through governed models."
   - "ThoughtSpot dashboards embedded in client platforms with <2 minute load times for 120+ DAUs."

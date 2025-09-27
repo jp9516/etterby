@@ -9,7 +9,7 @@ duration: "8 weeks"
 position: 4
 featured: false
 summary: "Stabilised Google Analytics, consent flows, and campaign attribution across five portfolio brands."
-description: "James Pearson led the tagging migration and governance playbook so marketing and product teams could rely on GA4 and BigQuery for decision-making."
+description: "Founder-led tagging migration and governance playbooks so marketing and product teams could rely on GA4 and BigQuery for decision-making."
 results:
   - "Unified GTM containers with consent-aware deployment and automated QA."
   - "GA4 to BigQuery export powering merchandising and acquisition dashboards within four weeks."

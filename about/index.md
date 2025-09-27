@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "About"
-description: "Discover James Pearson's CV, values, and the analytics outcomes delivered across marketplaces, SaaS, and media."
+description: "Learn how Etterby Analytics operates, the founder-led principles behind the consultancy, and the outcomes delivered for product and operations teams."
 ---
 {% assign page_content = site.data.about_page %}
 {% capture about_hero %}
@@ -14,6 +14,16 @@ description: "Discover James Pearson's CV, values, and the analytics outcomes de
   </div>
 {% endcapture %}
 {% include section.html tone="plain" padding="py-16" content=about_hero %}
+
+{% capture story_block %}
+  <div class="max-w-3xl space-y-4">
+    <h2 class="text-2xl font-semibold">{{ page_content.story.title }}</h2>
+    {% for paragraph in page_content.story.paragraphs %}
+      <p class="opacity-90">{{ paragraph }}</p>
+    {% endfor %}
+  </div>
+{% endcapture %}
+{% include section.html tone="frost" padding="py-12" content=story_block %}
 
 {% capture about_profile %}
   <div class="grid md:grid-cols-[2fr,1fr] gap-8 items-start">
@@ -66,7 +76,7 @@ description: "Discover James Pearson's CV, values, and the analytics outcomes de
       {% capture contact_panel %}
         <div class="space-y-3 text-center">
           <h2 class="text-lg font-semibold">Ready to collaborate?</h2>
-          <p class="text-sm text-brandblack/70 dark:text-white/70">Discuss your analytics roadmap and the momentum we can unlock.</p>
+          <p class="text-sm text-brandblack/70 dark:text-white/70">Discuss your analytics roadmap and the momentum Etterby Analytics can unlock.</p>
           <a href="{{ page_content.contact_cta.url }}" class="inline-flex justify-center px-5 py-3 bg-brandblue text-white rounded-xl">{{ page_content.contact_cta.label }}</a>
         </div>
       {% endcapture %}
@@ -74,85 +84,4 @@ description: "Discover James Pearson's CV, values, and the analytics outcomes de
     </aside>
   </div>
 {% endcapture %}
-{% include section.html tone="frost" content=about_profile %}
-
-{% capture cv_intro %}
-  <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-    <div>
-      <h2 class="text-2xl font-semibold">{{ page_content.cv.title }}</h2>
-      <p class="opacity-80">{{ page_content.cv.intro }}</p>
-    </div>
-    <a href="{{ page_content.cv.download.url }}" class="inline-flex items-center justify-center px-5 py-3 border border-brandblack/30 dark:border-white/30 rounded-xl text-sm uppercase tracking-wide">{{ page_content.cv.download.label }}</a>
-  </div>
-{% endcapture %}
-
-{% capture cv_roles %}
-  <div class="space-y-6">
-    {% for role in page_content.cv.experience.recent_roles %}
-      {% capture role_panel %}
-        <div class="space-y-3">
-          <header>
-            <p class="text-xs uppercase tracking-wide opacity-70">{{ role.company }} · {{ role.location }}</p>
-            <h4 class="text-lg font-semibold">{{ role.role }}</h4>
-            <p class="text-xs uppercase tracking-wide opacity-70">{{ role.period }}</p>
-          </header>
-          <ul class="space-y-2 text-sm opacity-90">
-            {% for highlight in role.highlights %}
-              <li>• {{ highlight }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-      {% endcapture %}
-      {% include panel.html tone="ink" class="space-y-4" content=role_panel %}
-    {% endfor %}
-    {% capture early_panel %}
-      <div class="space-y-2">
-        <h4 class="text-sm uppercase tracking-wide opacity-70">{{ page_content.cv.experience.early_career.title }}</h4>
-        <ul class="text-sm opacity-80 space-y-1">
-          {% for role in page_content.cv.experience.early_career.roles %}
-            <li>• {{ role }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endcapture %}
-    {% include panel.html tone="outline" class="space-y-2" content=early_panel %}
-  </div>
-{% endcapture %}
-
-{% capture cv_skills %}
-  <div class="grid md:grid-cols-2 gap-6">
-    {% capture skills_panel %}
-      <div class="space-y-3">
-        <h3 class="text-xl font-semibold">{{ page_content.cv.skills.title }}</h3>
-        <ul class="space-y-3 text-sm opacity-90">
-          {% for skill in page_content.cv.skills.categories %}
-            <li>
-              <span class="block font-semibold text-brandblack dark:text-white">{{ skill.name }}</span>
-              <span>{{ skill.detail }}</span>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endcapture %}
-    {% include panel.html tone="ink" class="space-y-3" content=skills_panel %}
-
-    {% capture education_panel %}
-      <div class="space-y-3">
-        <h3 class="text-xl font-semibold">{{ page_content.cv.education.title }}</h3>
-        <p class="text-sm opacity-90">{{ page_content.cv.education.detail }}</p>
-      </div>
-    {% endcapture %}
-    {% include panel.html tone="frost" class="space-y-3" content=education_panel %}
-  </div>
-{% endcapture %}
-
-{% capture cv_section %}
-  <div class="space-y-12">
-    {{ cv_intro }}
-    <div class="grid lg:grid-cols-[1.6fr,1fr] gap-8">
-      {{ cv_roles }}
-      {{ cv_skills }}
-    </div>
-  </div>
-{% endcapture %}
-{% include section.html tone="blue" content=cv_section %}
+{% include section.html tone="plain" content=about_profile %}

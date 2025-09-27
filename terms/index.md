@@ -7,7 +7,7 @@ description: "Website terms for Etterby Analytics covering use of content, engag
   <div class="space-y-6">
     <div class="space-y-3">
       <h1 class="text-3xl font-semibold">Website Terms</h1>
-      <p class="opacity-90">Etterby Analytics Ltd (“we”, “us”) operates this site to share information about consultancy services delivered by James Pearson. By using the site you agree to these terms. If you do not agree, please discontinue use.</p>
+      <p class="opacity-90">Etterby Analytics Ltd operates this site to share information about consultancy services delivered by the Etterby Analytics team. By using the site you agree to these terms. If you do not agree, please discontinue use.</p>
     </div>
 
     <div class="space-y-3">
@@ -17,27 +17,27 @@ description: "Website terms for Etterby Analytics covering use of content, engag
 
     <div class="space-y-3">
       <h2 class="text-xl font-semibold">Engagements and proposals</h2>
-      <p class="opacity-90">Any proposal, statement of work, or master services agreement issued by Etterby Analytics supersedes the general information on this site. Fees, deliverables, and timelines are confirmed in writing for each engagement. We reserve the right to decline projects that present conflicts of interest or exceed available capacity.</p>
+      <p class="opacity-90">Any proposal, statement of work, or master services agreement issued by Etterby Analytics supersedes the general information on this site. Fees, deliverables, and timelines are confirmed in writing for each engagement. The consultancy reserves the right to decline projects that present conflicts of interest or exceed available capacity.</p>
     </div>
 
     <div class="space-y-3">
       <h2 class="text-xl font-semibold">Client responsibilities</h2>
-      <p class="opacity-90">Clients remain responsible for providing timely access to data, systems, and stakeholders required to complete the work. You are also accountable for ensuring you have the rights to share data with us and for acting on the recommendations delivered.</p>
+      <p class="opacity-90">Clients remain responsible for providing timely access to data, systems, and stakeholders required to complete the work. Each client is also accountable for ensuring they have the rights to share data with Etterby Analytics and for acting on the recommendations delivered.</p>
     </div>
 
     <div class="space-y-3">
       <h2 class="text-xl font-semibold">Confidentiality & data protection</h2>
-      <p class="opacity-90">We treat all client materials as confidential and use them solely for the agreed engagement. Mutual non-disclosure agreements can be executed on request. Personal data is handled in line with our <a class="underline" href="/privacy/">Privacy Policy</a>.</p>
+      <p class="opacity-90">Etterby Analytics treats all client materials as confidential and uses them solely for the agreed engagement. Mutual non-disclosure agreements can be executed on request. Personal data is handled in line with the <a class="underline" href="/privacy/">Privacy Policy</a>.</p>
     </div>
 
     <div class="space-y-3">
       <h2 class="text-xl font-semibold">Liability</h2>
-      <p class="opacity-90">To the fullest extent permitted by law, we exclude liability for indirect, special, or consequential losses arising from use of this site. Direct losses arising from paid engagements are limited to the fees paid for the relevant services unless a separate contract states otherwise.</p>
+      <p class="opacity-90">To the fullest extent permitted by law, Etterby Analytics excludes liability for indirect, special, or consequential losses arising from use of this site. Direct losses arising from paid engagements are limited to the fees paid for the relevant services unless a separate contract states otherwise.</p>
     </div>
 
     <div class="space-y-3">
       <h2 class="text-xl font-semibold">Third-party links</h2>
-      <p class="opacity-90">Links to external sites are provided for convenience only. We do not endorse or accept responsibility for third-party content or practices.</p>
+      <p class="opacity-90">Links to external sites are provided for convenience only. Etterby Analytics does not endorse or accept responsibility for third-party content or practices.</p>
     </div>
 
     <div class="space-y-3">

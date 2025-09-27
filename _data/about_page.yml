@@ -1,16 +1,16 @@
 hero:
-  eyebrow: "About James Pearson"
-  title: "Analytics leadership that pairs craft with commercial impact"
+  eyebrow: "About Etterby Analytics"
+  title: "Founder-led analytics with measurable outcomes"
   description:
-    - "Based in Carlisle, I operate as an embedded lead analyst for high-growth teams - shipping the infrastructure, decision science, and enablement that turn data into revenue, resilience, and trust across the UK and beyond."
-    - "Across Cumbria organisations, UK scale-ups, and selected global marketplaces, SaaS platforms, and media, I have built data functions from scratch, modernised analytics programmes, and mentored analysts to operate with confidence."
+    - "Etterby Analytics is an independent consultancy based in Carlisle, partnering with product and operations teams to make better commercial decisions with reliable data."
+    - "Engagements pair on-site work across Cumbria with remote collaboration for UK organisations and select global partners, focusing every project on tangible improvements to revenue, trust, or efficiency."
 profile:
-  title: "Founder & Lead Analyst"
-  name: "James Pearson"
+  title: "Founder-led delivery"
+  name: "Carlisle-based leadership"
   bio:
-    - "Lead Data Analyst at Xcelirate (contract) delivering fraud prevention, price optimisation, and forecasting systems."
-    - "Former Senior Data Analyst at Vita Mojo, rolling out ThoughtSpot across global enterprise clients."
-    - "11+ years in analytics roles spanning experimentation, customer insight, and CRM strategy."
+    - "Led by an embedded analytics founder with more than a decade delivering experimentation, forecasting, and BI programmes."
+    - "Hands-on across discovery, modelling, and enablement to make sure capability stays inside your organisation."
+    - "Trusted by marketplaces, SaaS scale-ups, and hospitality brands needing resilient data foundations and accountable outcomes."
 values:
   title: "Principles that guide every engagement"
   items:
@@ -29,66 +29,8 @@ credentials:
 contact_cta:
   label: "Book a working session"
   url: "/contact/"
-cv:
-  title: "Curriculum vitae"
-  intro: "Highlights from the last decade of building analytics teams, platforms, and revenue-critical models."
-  download:
-    label: "Request the full CV"
-    url: "mailto:hello@etterby.com?subject=CV%20request"
-  experience:
-    recent_roles:
-      - role: "Lead Data Analyst"
-        company: "Xcelirate (Contract)"
-        location: "Remote"
-        period: "Jul 2019 – Present"
-        highlights:
-          - "Built a modern analytics stack with ClickHouse, Airflow, dbt, and Superset for faster decision-making."
-          - "Designed Python/Flask fraud models with 86% detection at 97% precision, cutting fraud to 0.6%."
-          - "Delivered price optimisation, lifecycle, and forecasting models adopted across finance and product."
-          - "Led hiring and mentoring of analysts while running agile ceremonies with the executive team."
-      - role: "Senior Data Analyst"
-        company: "Vita Mojo"
-        location: "London (Remote)"
-        period: "Aug 2022 – Aug 2024"
-        highlights:
-          - "Implemented ThoughtSpot for internal teams and brands such as Subway, Leon, and Black Sheep Coffee."
-          - "Modelled KPIs, dashboards, and embedded analytics inside client platforms to standardise reporting."
-          - "Trained stakeholders to drive adoption of self-serve analytics and governed data definitions."
-      - role: "Customer Behavioural Insight Analyst"
-        company: "The Stars Group"
-        location: "Leeds"
-        period: "Oct 2018 – Jul 2019"
-        highlights:
-          - "Automated A/B test analysis in R to inform product decisions."
-          - "Built predictive next-deposit models that increased transaction value at payment."
-          - "Delivered funnel analytics for onboarding and payments using BigQuery."
-      - role: "Senior Insight Analyst"
-        company: "Premier Farnell UK Ltd"
-        location: "Leeds"
-        period: "Oct 2017 – Oct 2018"
-        highlights:
-          - "Developed product recommendation models delivering ~10% cross-sell uplift."
-          - "Integrated churn propensity modelling into Salesforce to prioritise sales outreach."
-          - "Created marketing attribution that improved budget allocation."
-    early_career:
-      title: "Early career"
-      roles:
-        - "CRM Insight Analyst · Wunderman UK · London · Dec 2016 – May 2017"
-        - "SQL Reporting Analyst · Karhoo (Contract) · London · Sep 2016 – Nov 2016"
-        - "Data Analyst · Zone (Contract) · London · Jun 2016 – Sep 2016"
-        - "Data Analyst · MixRadio · Bristol · Aug 2015 – May 2016"
-        - "Data Analyst · Grosvenor Casinos, Rank Group PLC · London · Aug 2012 – Aug 2015"
-  skills:
-    title: "Skills & competencies"
-    categories:
-      - name: "Technical"
-        detail: "Python (pandas, NumPy, scikit-learn), R, SQL (Postgres, MySQL, Redshift, ClickHouse, BigQuery)"
-      - name: "Data platforms"
-        detail: "Airflow, dbt, Superset, ThoughtSpot, Power BI, Tableau, MixPanel, Google Analytics"
-      - name: "Delivery"
-        detail: "Experimentation, forecasting, revenue optimisation, fraud detection"
-      - name: "Leadership"
-        detail: "Team building, mentoring, agile facilitation, executive storytelling"
-  education:
-    title: "Education"
-    detail: "BSc (Hons) Mathematics, University of Bristol - 2009-2012 (focus on statistical analysis with first-class grades across statistics modules)."
+story:
+  title: "A different kind of analytics partner"
+  paragraphs:
+    - "The consultancy was created to give growth teams senior analytics leadership without the overhead that comes with large agencies. Every engagement is delivered by the founder, not a rotating squad of juniors."
+    - "Competitors often prioritise headcount and billable hours. Etterby Analytics focuses on a smaller roster of clients, keeping execution close to decision-makers and sharing playbooks so internal teams stay confident after handover."

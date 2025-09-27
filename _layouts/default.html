@@ -57,8 +57,7 @@
       };
 
       const stored = getStoredTheme();
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const shouldUseDark = stored === 'dark' || (stored === null && prefersDark);
+      const shouldUseDark = stored === 'dark';
 
       root.classList.toggle('dark', shouldUseDark);
       root.dataset.theme = shouldUseDark ? 'dark' : 'light';
