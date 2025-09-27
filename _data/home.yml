@@ -1,19 +1,19 @@
 services:
   title: "Services"
-  description: "Targeted engagements to unblock analytics roadmaps, make metrics trustworthy, and bring the right ML into production."
+  description: "Engagements led by James Pearson to modernise data platforms, run experimentation programmes, and ship predictive models."
   view_all:
     label: "Explore all services"
     url: "/services/"
 work:
   title: "Selected work"
-  description: "Recent engagements that show how we deliver reliable data foundations and measurable impact."
+  description: "Case studies covering fraud reduction, price optimisation, and analytics enablement across marketplaces and SaaS."
   limit: 2
   view_all:
     label: "Browse work"
     url: "/work/"
 insights:
   title: "Latest insights"
-  description: "Notes on analytics operations, experimentation, and ML that you can apply this quarter."
+  description: "Field-tested playbooks on experimentation, forecasting, and analytics leadership drawn from 11+ years in data roles."
   limit: 3
   view_all:
     label: "See all insights"

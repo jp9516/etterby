@@ -3,27 +3,28 @@ title: "Metrics modernisation for B2B SaaS"
 client: "SaaS Platform (Series C)"
 industry: "B2B SaaS"
 services:
-  - Analytics & BI
-  - Data Engineering
+  - Analytics, BI & Enablement
+  - Data Platforms & Reliability
 duration: "12 weeks"
 position: 2
 featured: true
-summary: "Rebuilt the metrics layer and executive dashboards to give revenue and product teams a single source of truth."
+summary: "Delivered a governed metrics layer and ThoughtSpot rollout that aligned revenue and product teams."
+description: "James Pearson led the KPI framework, modelling, and enablement that standardised reporting for internal teams and enterprise restaurant brands."
 results:
-  - "Unified metric definitions adopted by finance, sales, and product"
-  - "<2 minute dashboard load times across 120 daily active users"
-  - "Embedded enablement sessions that boosted self-serve usage 3×"
+  - "Unified metric definitions adopted by finance, sales, and product through governed models."
+  - "ThoughtSpot dashboards embedded in client platforms with <2 minute load times for 120+ DAUs."
+  - "Enablement programme that tripled self-serve usage and reduced ad-hoc reporting requests."
 ---
 
 ### Problem
-Leadership could not reconcile revenue numbers across systems and quarterly targets were missed due to stale reporting.
+Leadership could not reconcile revenue numbers across systems, slowing strategic decisions and damaging trust with enterprise clients.
 
 ### Solution
-- Consolidated event, billing, and CRM data into a governed semantic layer
-- Delivered executive and team dashboards with performance SLAs
-- Ran enablement workshops and office hours for analysts and business stakeholders
+- Consolidated event, billing, and CRM data into a governed semantic layer with dbt and ThoughtSpot
+- Delivered executive and operator dashboards with documented SLAs and certified content
+- Ran enablement workshops, office hours, and certification paths to build self-serve confidence
 
 ### Outcome
-- Confident quarterly planning with reconciled revenue metrics
-- KPI refresh times reduced from hours to minutes
-- Cross-functional teams making decisions from the same dashboards
+- Confident quarterly planning with reconciled revenue metrics and definitions
+- KPI refresh times reduced from hours to minutes with search-driven analytics adoption
+- Cross-functional teams making decisions from the same dashboards and alerts

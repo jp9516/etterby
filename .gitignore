@@ -8,3 +8,4 @@ build/
 .cache/
 .env
 .env.*
+vendor/

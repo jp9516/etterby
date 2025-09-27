@@ -1,0 +1,21 @@
+{
+  "name": "Etterby Analytics",
+  "short_name": "Etterby",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0B0C",
+  "theme_color": "#0B0B0C",
+  "description": "Independent analytics consultancy led by James Pearson delivering data platforms, experimentation, and forecasting.",
+  "icons": [
+    {
+      "src": "/assets/og-image.png",
+      "type": "image/png",
+      "sizes": "1200x630"
+    },
+    {
+      "src": "/assets/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ]
+}

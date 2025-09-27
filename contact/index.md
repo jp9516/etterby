@@ -2,6 +2,7 @@
 ---
 layout: default
 title: "Contact"
+description: "Start a conversation with James Pearson about analytics, experimentation, or forecasting engagements."
 ---
 <section class="container mx-auto px-6 py-16">
   <h1 class="text-3xl md:text-4xl font-semibold">Contact</h1>

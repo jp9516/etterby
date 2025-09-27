@@ -29,3 +29,26 @@ defaults:
       type: "services"
     values:
       layout: service
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+
+company:
+  name: "Etterby Analytics Ltd"
+  legal_name: "Etterby Analytics Ltd"
+  url: "https://etterby.com"
+  email: "hello@etterby.com"
+  telephone: "+44 20 1234 5678"
+  description: "Independent analytics consultancy led by James Pearson delivering data platforms, experimentation, and forecasting."
+  logo: "/assets/og-image.png"
+  same_as:
+    - "https://www.linkedin.com/in/james-pearson-data/"
+  address:
+    street_address: "Remote-first"
+    address_locality: "London"
+    address_region: "England"
+    postal_code: ""
+    address_country: "GB"
+  founder: "James Pearson"
