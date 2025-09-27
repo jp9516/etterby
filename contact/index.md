@@ -26,6 +26,11 @@ description: "Start a conversation with James Pearson about analytics, experimen
     {% capture form_panel %}
       <div class="space-y-6">
         {{ contact_form }}
+        <ul class="text-sm opacity-80 space-y-1">
+          <li>Replies land within two working days, often sooner.</li>
+          <li>Initial calls cover goals, current analytics setup, and next steps.</li>
+          <li>Bring any recent dashboards or KPIs you’d like to discuss.</li>
+        </ul>
         <p class="text-xs opacity-70">Or email <a href="mailto:hello@etterby.com" class="underline">hello@etterby.com</a></p>
       </div>
     {% endcapture %}
