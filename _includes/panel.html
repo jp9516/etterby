@@ -3,13 +3,13 @@
 {% assign base = 'rounded-2xl border ' | append: padding %}
 {% case tone %}
   {% when 'frost' %}
-    {% assign classes = base | append: ' border-white/10 bg-white/5 shadow-lg shadow-black/30 backdrop-blur-sm' %}
+    {% assign classes = base | append: ' border-brandblack/10 bg-brandblack/5 shadow-lg shadow-brandblack/20 dark:border-white/10 dark:bg-white/5 dark:shadow-black/30 backdrop-blur-sm' %}
   {% when 'ink' %}
-    {% assign classes = base | append: ' border-white/10 bg-brandblack/70 shadow-lg shadow-black/50' %}
+    {% assign classes = base | append: ' border-brandblack/10 bg-white shadow-lg shadow-brandblack/10 dark:border-white/10 dark:bg-brandblack/70 dark:shadow-black/50' %}
   {% when 'outline' %}
-    {% assign classes = base | append: ' border-white/20 bg-transparent' %}
+    {% assign classes = base | append: ' border-brandblack/20 bg-transparent dark:border-white/20' %}
   {% when 'glow' %}
-    {% assign classes = base | append: ' border-brandblue/30 bg-brandblue/10 shadow-[0_20px_45px_rgba(30,95,255,0.22)]' %}
+    {% assign classes = base | append: ' border-brandblue/20 bg-brandblue/10 shadow-[0_20px_45px_rgba(30,95,255,0.12)] dark:border-brandblue/30 dark:bg-brandblue/10 dark:shadow-[0_20px_45px_rgba(30,95,255,0.22)]' %}
   {% when 'solid' %}
     {% assign classes = base | append: ' border-brandblue/60 bg-brandblue text-white' %}
   {% else %}

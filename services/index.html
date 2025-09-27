@@ -92,12 +92,12 @@ description: "Consultancy engagements covering data platforms, analytics, experi
             {% if service.focus %}
               <ul class="pt-1 text-xs uppercase tracking-wide opacity-70 flex flex-wrap gap-2">
                 {% for item in service.focus %}
-                  <li class="px-2 py-1 rounded-full border border-white/10">{{ item }}</li>
+                  <li class="px-2 py-1 rounded-full border border-brandblack/20 dark:border-white/10">{{ item }}</li>
                 {% endfor %}
               </ul>
             {% endif %}
           </header>
-          <div class="prose prose-invert max-w-none text-sm">
+          <div class="prose prose-neutral dark:prose-invert max-w-none text-sm">
             {{ service.content | markdownify }}
           </div>
           <a href="{{ service.url }}" class="text-sm text-brandblue mt-auto">View service →</a>
@@ -151,7 +151,7 @@ description: "Consultancy engagements covering data platforms, analytics, experi
         <p class="text-sm opacity-80">Ready to explore a project?</p>
         <div class="flex flex-col gap-3">
           <a href="{{ page_content.ctas.primary.url }}" class="px-5 py-3 bg-brandblue text-white rounded-xl text-center">{{ page_content.ctas.primary.label }}</a>
-          <a href="{{ page_content.ctas.secondary.url }}" class="px-5 py-3 border border-white/20 rounded-xl text-center">{{ page_content.ctas.secondary.label }}</a>
+          <a href="{{ page_content.ctas.secondary.url }}" class="px-5 py-3 border border-brandblack/20 dark:border-white/20 rounded-xl text-center">{{ page_content.ctas.secondary.label }}</a>
         </div>
       </div>
     {% endcapture %}

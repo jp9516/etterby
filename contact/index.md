@@ -12,10 +12,10 @@ description: "Start a conversation with James Pearson about analytics, experimen
 
 {% capture contact_form %}
   <form action="https://formspree.io/f/xovkjwgg" method="POST" class="grid md:grid-cols-2 gap-4">
-    <input type="text" name="name" placeholder="Name" class="bg-brandblack/70 border border-white/20 rounded-lg px-4 py-3 focus:border-brandblue focus:outline-none" required>
-    <input type="email" name="email" placeholder="Work email" class="bg-brandblack/70 border border-white/20 rounded-lg px-4 py-3 focus:border-brandblue focus:outline-none" required>
-    <input type="text" name="company" placeholder="Company" class="bg-brandblack/70 border border-white/20 rounded-lg px-4 py-3 md:col-span-2 focus:border-brandblue focus:outline-none">
-    <textarea name="message" placeholder="What do you need?" class="bg-brandblack/70 border border-white/20 rounded-lg px-4 py-3 md:col-span-2 focus:border-brandblue focus:outline-none" rows="5" required></textarea>
+    <input type="text" name="name" placeholder="Name" class="bg-white border border-brandblack/10 dark:bg-brandblack/70 dark:border-white/20 rounded-lg px-4 py-3 focus:border-brandblue focus:outline-none transition" required>
+    <input type="email" name="email" placeholder="Work email" class="bg-white border border-brandblack/10 dark:bg-brandblack/70 dark:border-white/20 rounded-lg px-4 py-3 focus:border-brandblue focus:outline-none transition" required>
+    <input type="text" name="company" placeholder="Company" class="bg-white border border-brandblack/10 dark:bg-brandblack/70 dark:border-white/20 rounded-lg px-4 py-3 md:col-span-2 focus:border-brandblue focus:outline-none transition">
+    <textarea name="message" placeholder="What do you need?" class="bg-white border border-brandblack/10 dark:bg-brandblack/70 dark:border-white/20 rounded-lg px-4 py-3 md:col-span-2 focus:border-brandblue focus:outline-none transition" rows="5" required></textarea>
     <button type="submit" class="bg-brandyellow text-brandblack font-semibold rounded-xl px-6 py-3 md:col-span-2">Send</button>
   </form>
 {% endcapture %}
@@ -38,10 +38,10 @@ description: "Start a conversation with James Pearson about analytics, experimen
     {% capture linkedin_panel %}
       <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div class="space-y-1">
-          <p class="font-medium text-white/90">Connect on LinkedIn</p>
-          <p class="text-sm text-white/60">Stay up to date with analytics insights and message James directly.</p>
+          <p class="font-medium text-brandblack/90 dark:text-white/90">Connect on LinkedIn</p>
+          <p class="text-sm text-brandblack/60 dark:text-white/60">Stay up to date with analytics insights and message James directly.</p>
         </div>
-        <a href="https://www.linkedin.com/in/james-pearson-etterby" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg border border-white/20 text-white/80 hover:text-white hover:border-white/40 transition" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/in/james-pearson-etterby" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg border border-brandblack/20 text-brandblack/80 hover:text-brandblue dark:border-white/20 dark:text-white/80 dark:hover:text-white transition" target="_blank" rel="noopener">
           <span>View profile</span>
         </a>
       </div>
