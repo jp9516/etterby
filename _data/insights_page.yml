@@ -13,7 +13,7 @@ categories:
     - name: "Analytics leadership"
       detail: "Building teams, governing metrics, and embedding tools like ThoughtSpot across the org."
 newsletter:
-  title: "Stay in the loop"
-  body: "A quarterly note featuring what worked (and what didn't) while reducing fraud, lifting revenue, and rolling out BI."
-  cta_label: "Join the list"
-  cta_url: "https://etterby.com/newsletter"
+  title: "Ready to discuss your next analytics milestone?"
+  body: "Share the outcomes you are targeting and I will map the fastest path to get there."
+  cta_label: "Contact"
+  cta_url: "/contact/"

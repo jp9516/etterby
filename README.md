@@ -1,5 +1,5 @@
 
-# Etterby Analytics — Jekyll Site
+# Etterby Analytics - Jekyll Site
 
 Static site built with Jekyll for GitHub Pages.
 

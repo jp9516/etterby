@@ -8,21 +8,11 @@ description: "Reliable pipelines, clear metrics, and practical ML for product an
 <section id="hero" class="container mx-auto px-6 py-24">
   <h1 class="text-5xl md:text-6xl font-semibold leading-tight">Analytics that drive outcomes.</h1>
   <p class="mt-4 text-lg max-w-2xl">
-    I help product and operations teams ship reliable data pipelines, clear metrics, and practical ML—without drama.
+    I help product and operations teams ship reliable data pipelines, clear metrics, and practical ML - without drama.
   </p>
   <div class="mt-8 flex flex-wrap gap-4">
     <a href="/contact/" class="px-5 py-3 bg-brandblue text-white rounded-xl">Book a call</a>
     <a href="/services/" class="px-5 py-3 border rounded-xl">View services</a>
-  </div>
-</section>
-
-<section class="bg-white/5">
-  <div class="container mx-auto px-6 py-6 text-xs md:text-sm flex flex-wrap gap-x-6 gap-y-2 items-center">
-    <span class="opacity-90">UK limited company</span>
-    <span class="opacity-90">Security &amp; privacy by design</span>
-    <span class="opacity-90">dbt • Airflow • ClickHouse • Python</span>
-    <span class="opacity-90">Remote-first</span>
-    <span class="opacity-90">Clear SLAs &amp; reporting</span>
   </div>
 </section>
 
@@ -33,7 +23,7 @@ description: "Reliable pipelines, clear metrics, and practical ML for product an
       <h2 class="text-3xl font-semibold">{{ home_services.title }}</h2>
       <p class="mt-2 opacity-80 max-w-2xl">{{ home_services.description }}</p>
     </div>
-    <a href="{{ home_services.view_all.url }}" class="text-sm uppercase tracking-wide opacity-80 hover:opacity-100">{{ home_services.view_all.label }}</a>
+    <a href="{{ home_services.view_all.url }}" class="inline-flex px-5 py-3 bg-brandblue text-white rounded-xl text-sm uppercase tracking-wide">{{ home_services.view_all.label }}</a>
   </div>
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
     {% assign services = site.services | sort: 'position' %}
@@ -60,7 +50,7 @@ description: "Reliable pipelines, clear metrics, and practical ML for product an
       <h2 class="text-3xl font-semibold">{{ home_work.title }}</h2>
       <p class="mt-2 opacity-80 max-w-2xl">{{ home_work.description }}</p>
     </div>
-    <a href="{{ home_work.view_all.url }}" class="text-sm uppercase tracking-wide opacity-80 hover:opacity-100">{{ home_work.view_all.label }}</a>
+    <a href="{{ home_work.view_all.url }}" class="inline-flex px-5 py-3 bg-brandblue text-white rounded-xl text-sm uppercase tracking-wide">{{ home_work.view_all.label }}</a>
   </div>
   {% assign featured_work = site.work | where_exp: 'item', 'item.featured != false' | sort: 'position' %}
   {% if featured_work.size > 0 %}
