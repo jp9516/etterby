@@ -1,10 +1,33 @@
-
+---
+layout: null
+permalink: /sitemap.xml
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://etterby.com/</loc></url>
-  <url><loc>https://etterby.com/services/</loc></url>
-  <url><loc>https://etterby.com/work/</loc></url>
-  <url><loc>https://etterby.com/about/</loc></url>
-  <url><loc>https://etterby.com/insights/</loc></url>
-  <url><loc>https://etterby.com/contact/</loc></url>
+  {% assign sitemap_pages = site.pages | where_exp: "p", "p.draft != true" | where_exp: "p", "p.sitemap != false" %}
+  {% for page in sitemap_pages %}
+    {% unless page.url == "/404.html" or page.url == "/feed.xml" or page.url == "/sitemap.xml" or page.url == "/robots.txt" or page.permalink == "/robots.txt" %}
+  <url>
+    <loc>{{ page.url | absolute_url }}</loc>
+  </url>
+    {% endunless %}
+  {% endfor %}
+  {% assign sitemap_posts = site.posts | where_exp: "post", "post.draft != true" | where_exp: "post", "post.sitemap != false" %}
+  {% for post in sitemap_posts %}
+  <url>
+    <loc>{{ post.url | absolute_url }}</loc>
+  </url>
+  {% endfor %}
+  {% assign sitemap_work = site.work | where_exp: "item", "item.draft != true" | where_exp: "item", "item.sitemap != false" %}
+  {% for item in sitemap_work %}
+  <url>
+    <loc>{{ item.url | absolute_url }}</loc>
+  </url>
+  {% endfor %}
+  {% assign sitemap_services = site.services | where_exp: "item", "item.draft != true" | where_exp: "item", "item.sitemap != false" %}
+  {% for item in sitemap_services %}
+  <url>
+    <loc>{{ item.url | absolute_url }}</loc>
+  </url>
+  {% endfor %}
 </urlset>
