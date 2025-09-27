@@ -1,0 +1,28 @@
+hero:
+  eyebrow: "Selected work"
+  title: "Case studies that moved key metrics"
+  description:
+    - "We partner with product, operations, and platform teams to deliver measurable improvements. Each engagement blends analytics, engineering, and enablement so the change sticks after launch."
+filters:
+  title: "What we deliver"
+  items:
+    - "Data platforms & reliability"
+    - "Decision-ready metrics"
+    - "Applied machine learning"
+    - "AI automation & copilots"
+stats:
+  - label: "Median engagement"
+    value: "12 weeks"
+  - label: "Stakeholder NPS"
+    value: "9.4 / 10"
+  - label: "Production uptime"
+    value: "99.9%+"
+process:
+  title: "A simple, accountable process"
+  steps:
+    - title: "Frame"
+      detail: "Clarify the decision, success metrics, and constraints with stakeholders."
+    - title: "Ship"
+      detail: "Deliver production-ready assets with testing, observability, and documentation."
+    - title: "Adopt"
+      detail: "Enable teams with playbooks, training, and handover support."

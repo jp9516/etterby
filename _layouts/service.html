@@ -1,14 +1,36 @@
-
 ---
 layout: default
 ---
 <section class="container mx-auto px-6 py-16">
-  <h1 class="text-3xl md:text-4xl font-semibold">{{ page.title }}</h1>
-  <p class="opacity-80 mt-2">{{ page.tagline }}</p>
-  <article class="prose prose-invert mt-6 max-w-none">
-    {{ content }}
-  </article>
-  <div class="mt-8">
-    <a href="/contact/" class="px-5 py-3 bg-brandblue text-white rounded-xl">Book a call</a>
+  <div class="grid md:grid-cols-[2fr,1fr] gap-8">
+    <article class="space-y-6">
+      <header class="space-y-3">
+        <p class="text-xs uppercase tracking-wide opacity-70">{{ page.tagline }}</p>
+        <h1 class="text-3xl md:text-4xl font-semibold">{{ page.title }}</h1>
+        {% if page.summary %}
+          <p class="text-sm opacity-90 max-w-2xl">{{ page.summary }}</p>
+        {% endif %}
+      </header>
+      <div class="prose prose-invert max-w-none">
+        {{ content }}
+      </div>
+    </article>
+    <aside class="space-y-6">
+      {% if page.focus %}
+        <div class="p-6 rounded-2xl border border-white/10">
+          <h2 class="text-lg font-semibold mb-3">Focus areas</h2>
+          <ul class="space-y-2 text-sm opacity-80">
+            {% for item in page.focus %}
+              <li>• {{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+      <div class="p-6 rounded-2xl border border-white/10 space-y-3">
+        <h2 class="text-lg font-semibold">Book a call</h2>
+        <p class="text-sm opacity-80">Share your goals and we will map the quickest route to value.</p>
+        <a href="/contact/" class="block px-5 py-3 bg-brandblue text-white rounded-xl text-center">Discuss your project</a>
+      </div>
+    </aside>
   </div>
 </section>

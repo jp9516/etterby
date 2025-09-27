@@ -1,16 +1,51 @@
-
 ---
 layout: default
 title: "Insights"
 ---
-<section class="container mx-auto px-6 py-16">
-  <h1 class="text-3xl md:text-4xl font-semibold mb-6">Insights</h1>
-  <div class="grid md:grid-cols-3 gap-6">
-    {% for post in site.posts %}
-      <article class="p-6 rounded-2xl border border-white/10">
-        <h3 class="font-semibold mb-2"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <p class="text-sm opacity-90">{{ post.excerpt | strip_html | truncate: 140 }}</p>
-      </article>
+{% assign page_content = site.data.insights_page %}
+{% assign posts = site.posts %}
+
+<section class="container mx-auto px-6 py-16 space-y-12">
+  <div class="max-w-3xl space-y-4">
+    <p class="text-xs uppercase tracking-wide opacity-70">{{ page_content.hero.eyebrow }}</p>
+    <h1 class="text-3xl md:text-4xl font-semibold">{{ page_content.hero.title }}</h1>
+    {% for paragraph in page_content.hero.description %}
+      <p class="opacity-90">{{ paragraph }}</p>
     {% endfor %}
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-6">
+    {% for category in page_content.categories.items %}
+      <div class="p-6 rounded-2xl border border-white/10 space-y-2">
+        <h2 class="text-lg font-semibold">{{ category.name }}</h2>
+        <p class="text-sm opacity-80">{{ category.detail }}</p>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="space-y-6">
+    <h2 class="text-2xl font-semibold">Latest articles</h2>
+    {% if posts.size > 0 %}
+      <div class="grid md:grid-cols-3 gap-6">
+        {% for post in posts %}
+          <article class="p-6 rounded-2xl border border-white/10 flex flex-col gap-3">
+            <div>
+              <p class="text-xs uppercase tracking-wide opacity-70">{{ post.date | date: "%d %b %Y" }}</p>
+              <h3 class="font-semibold text-lg"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            </div>
+            <p class="text-sm opacity-80">{{ post.excerpt | strip_html | truncate: 140 }}</p>
+            <a href="{{ post.url }}" class="text-sm text-brandblue mt-auto">Read more →</a>
+          </article>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="opacity-80">Publish a post in <code>_posts/</code> to populate this list.</p>
+    {% endif %}
+  </div>
+
+  <div class="p-8 rounded-2xl border border-white/10 bg-white/5 space-y-4">
+    <h2 class="text-2xl font-semibold">{{ page_content.newsletter.title }}</h2>
+    <p class="opacity-80">{{ page_content.newsletter.body }}</p>
+    <a href="{{ page_content.newsletter.cta_url }}" class="inline-flex px-5 py-3 bg-brandblue text-white rounded-xl">{{ page_content.newsletter.cta_label }}</a>
   </div>
 </section>
