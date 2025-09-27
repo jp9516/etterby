@@ -1,28 +1,28 @@
 hero:
   eyebrow: "How we help"
-  title: "Engagement models that unblock your roadmap"
+  title: "Embedded analytics leadership for complex decisions"
   description:
-    - "We start with the decision you need to make or the reliability target you need to hit. Then we combine engineering, analytics, and data science capabilities to deliver the smallest viable slice that proves value."
-    - "Everything is versioned, automated, and documented so your team can extend it after we ship."
+    - "James Pearson works hands-on with your product, operations, and finance teams to deliver the data foundations, decision science, and enablement you need to move faster."
+    - "Engagements are scoped around measurable outcomes—fraud reduction, revenue uplift, adoption—and pair rigorous delivery with coaching for your internal teams."
 service_models:
   title: "Common engagement patterns"
   items:
-    - name: "Foundations sprint"
+    - name: "Data foundations sprint"
       duration: "4–6 weeks"
-      detail: "Stabilise pipelines, define metrics, and establish deployment practices so your team can move fast without breakage."
-    - name: "Analytics partner"
-      duration: "Quarterly retainer"
-      detail: "Hands-on delivery plus coaching for product, ops, and finance teams that need ongoing insights."
-    - name: "ML delivery pod"
-      duration: "8–16 weeks"
-      detail: "From framing to production monitoring for a focused use case—experimentation, forecasting, or detection."
+      detail: "Stabilise pipelines with dbt, Airflow, and observability, then codify critical metrics so reporting and experimentation can scale."
+    - name: "Experimentation & insights pod"
+      duration: "8–12 weeks"
+      detail: "Design test roadmaps, automate analysis, and deliver dashboards that quantify conversion, retention, and monetisation."
+    - name: "Revenue intelligence retainer"
+      duration: "Quarterly engagement"
+      detail: "Ongoing partnership covering forecasting, pricing optimisation, and executive enablement with a clear cadence of deliverables."
 collaboration:
   title: "How we collaborate"
   points:
     - "Dedicated Slack channel with <24h async response times"
-    - "Weekly steering with clear deliverables and risk tracking"
-    - "Playbooks, runbooks, and handover sessions for internal teams"
-    - "Tooling access and credentials managed through your SSO"
+    - "Weekly steering with conversion, revenue, or fraud metrics reviewed against targets"
+    - "Playbooks, runbooks, and enablement sessions to embed the new workflows"
+    - "Security, access, and documentation handled in your existing tooling"
 ctas:
   primary:
     label: "Discuss a project"

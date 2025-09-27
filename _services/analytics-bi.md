@@ -1,23 +1,24 @@
 ---
-title: "Analytics & BI"
+title: "Analytics, BI & Enablement"
 position: 2
-tagline: "Metric layers and semantic models. Dashboards execs actually use."
-summary: "Define metrics once, serve them everywhere, and give leaders the context to make confident calls."
+tagline: "Semantic layers, KPI frameworks, and embedded analytics people adopt."
+summary: "Define metrics once, serve them everywhere, and enable teams with workshops, playbooks, and support."
+description: "Frameworks proven across Vita Mojo, Subway, Leon, and finance teams needing consistent reporting."
 focus:
-  - Metrics
+  - KPI Frameworks
   - Governance
   - Enablement
 ---
 
 **Where we start**
-- Interview stakeholders to surface decisions and required signals
-- Map existing sources into a governed semantic layer
-- Prioritise critical dashboards with adoption goals and owners
+- Map critical decisions, data sources, and the definitions that are currently disputed
+- Design a governed semantic layer or ThoughtSpot/BI model that reflects how teams operate
+- Prioritise the dashboards, alerts, and self-serve journeys that matter for revenue and operations
 
 **Outcomes**
-- Metrics and definitions that align finance, product, and operations
-- Dashboards that load quickly and answer the follow-up questions
-- Teams enabled to self-serve with playbooks and office hours
+- Metric definitions aligned across finance, product, and operations with clear ownership
+- Dashboards and search-driven analytics that load quickly and answer follow-up questions
+- Training cadences that drive adoption and lower reliance on ad-hoc requests
 
 **Stack**
-dbt metrics, Metabase, Superset, Hex
+ThoughtSpot, Superset, dbt metrics, Power BI, Hex

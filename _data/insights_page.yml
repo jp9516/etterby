@@ -1,19 +1,19 @@
 hero:
   eyebrow: "Insights"
-  title: "Playbooks for analytics leaders"
+  title: "Insights shaped by hands-on delivery"
   description:
-    - "Short reads on running reliable data organisations, measuring product impact, and using ML where it matters."
+    - "Field-tested guidance on experimentation, forecasting, and analytics leadership pulled from shipping platforms, pricing models, and enablement programmes."
 categories:
   title: "Topics you can explore"
   items:
-    - name: "Data operations"
-      detail: "Pipelines, observability, and governance that keep trust high."
-    - name: "Product analytics"
-      detail: "Decision-making frameworks and experimentation techniques."
-    - name: "Applied ML"
-      detail: "Detection, forecasting, and automation that make a difference."
+    - name: "Experimentation"
+      detail: "Designing test roadmaps, automating analysis, and communicating outcomes with confidence."
+    - name: "Revenue & pricing"
+      detail: "Forecasting demand, modelling elasticity, and aligning finance with product."
+    - name: "Analytics leadership"
+      detail: "Building teams, governing metrics, and embedding tools like ThoughtSpot across the org."
 newsletter:
   title: "Stay in the loop"
-  body: "A quarterly note with field-tested tactics for data leaders—no spam, no fluff."
+  body: "A quarterly note featuring what worked (and what didn't) while reducing fraud, lifting revenue, and rolling out BI."
   cta_label: "Join the list"
   cta_url: "https://etterby.com/newsletter"

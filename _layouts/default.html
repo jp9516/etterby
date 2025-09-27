@@ -6,13 +6,42 @@
   <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
   <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0B0B0C">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/assets/site.webmanifest">
+  <link rel="apple-touch-icon" href="/assets/og-image.png">
   <meta property="og:title" content="{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}">
   <meta property="og:description" content="{{ page.description | default: site.description }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:image" content="/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "{{ site.company.name }}",
+      "legalName": "{{ site.company.legal_name }}",
+      "url": "{{ site.company.url | default: site.url }}",
+      "description": "{{ page.description | default: site.company.description | default: site.description }}",
+      "email": "{{ site.company.email }}",
+      "telephone": "{{ site.company.telephone }}",
+      "image": "{{ site.company.logo }}",
+      "founder": {
+        "@type": "Person",
+        "name": "{{ site.company.founder }}"
+      },
+      "sameAs": [{% for profile in site.company.same_as %}"{{ profile }}"{% if forloop.last == false %}, {% endif %}{% endfor %}],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{ site.company.address.street_address }}",
+        "addressLocality": "{{ site.company.address.address_locality }}",
+        "addressRegion": "{{ site.company.address.address_region }}",
+        "postalCode": "{{ site.company.address.postal_code }}",
+        "addressCountry": "{{ site.company.address.address_country }}"
+      }
+    }
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {

@@ -1,22 +1,22 @@
 hero:
   eyebrow: "Selected work"
-  title: "Case studies that moved key metrics"
+  title: "Case studies that match analytics craft with business results"
   description:
-    - "We partner with product, operations, and platform teams to deliver measurable improvements. Each engagement blends analytics, engineering, and enablement so the change sticks after launch."
+    - "Each engagement blends data engineering, experimentation, and enablement. The focus: measurable shifts in fraud, revenue, or adoption that sustain after handover."
 filters:
   title: "What we deliver"
   items:
     - "Data platforms & reliability"
-    - "Decision-ready metrics"
-    - "Applied machine learning"
-    - "AI automation & copilots"
+    - "Decision-ready analytics"
+    - "Experimentation & forecasting"
+    - "Revenue optimisation"
 stats:
   - label: "Median engagement"
     value: "12 weeks"
-  - label: "Stakeholder NPS"
-    value: "9.4 / 10"
-  - label: "Production uptime"
-    value: "99.9%+"
+  - label: "Revenue uplift delivered"
+    value: "+10% daily revenue"
+  - label: "Fraud reduction achieved"
+    value: "10% → 0.6%"
 process:
   title: "A simple, accountable process"
   steps:
