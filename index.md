@@ -8,7 +8,7 @@ description: "Reliable pipelines, clear metrics, and practical ML for product an
   <div class="space-y-8">
     <h1 class="text-5xl md:text-6xl font-semibold leading-tight">Analytics that drive outcomes.</h1>
     <p class="text-lg max-w-2xl">
-      I help product and operations teams ship reliable data pipelines, clear metrics, and practical ML - without drama.
+      I run a Carlisle analytics consultancy that helps product and operations teams across Cumbria, throughout the UK, and select global partners ship reliable data pipelines, clear metrics, and practical ML – without drama.
     </p>
     <div class="flex flex-wrap gap-4">
       <a href="/contact/" class="px-5 py-3 bg-brandblue text-white rounded-xl">Book a call</a>
