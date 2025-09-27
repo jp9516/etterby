@@ -6,7 +6,7 @@ services:
   - Analytics, BI & Enablement
   - Data Platforms & Reliability
 duration: "12 weeks"
-position: 2
+position: 3
 featured: true
 summary: "Delivered a governed metrics layer and ThoughtSpot rollout that aligned revenue and product teams."
 description: "James Pearson led the KPI framework, modelling, and enablement that standardised reporting for internal teams and enterprise restaurant brands."
