@@ -1,36 +1,42 @@
 hero:
   eyebrow: "About Etterby Analytics"
-  title: "Founder-led analytics with measurable outcomes"
+  title: "Founder-led analytics for teams that need momentum"
   description:
-    - "Etterby Analytics is an independent consultancy based in Carlisle, partnering with product and operations teams to make better commercial decisions with reliable data."
-    - "Engagements pair on-site work across Cumbria with remote collaboration for UK organisations and select global partners, focusing every project on tangible improvements to revenue, trust, or efficiency."
-profile:
-  title: "Founder-led delivery"
-  name: "Carlisle-based leadership"
-  bio:
-    - "Led by an embedded analytics founder with more than a decade delivering experimentation, forecasting, and BI programmes."
-    - "Hands-on across discovery, modelling, and enablement to make sure capability stays inside your organisation."
-    - "Trusted by marketplaces, SaaS scale-ups, and hospitality brands needing resilient data foundations and accountable outcomes."
-values:
-  title: "Principles that guide every engagement"
+    - "Etterby Analytics is a Carlisle-based consultancy partnering with founders, product leaders, and operators who need sharper decisions without adding headcount."
+    - "Every engagement is led by the founder, bringing 10+ years of experimentation, forecasting, and BI leadership directly into your roadmap so measurable progress shows up fast."
+narrative:
+  intro:
+    - "Founder-led companies like Basecamp and Stripe tell simple stories: why they exist, how they work, and the proof that it matters. Etterby follows the same playbook—focused on clarity, accountability, and outcomes from the very first working session."
+  sections:
+    - title: "Why Etterby exists"
+      body:
+        - "Too many analytics programmes stall because strategy and delivery are split across agencies, vendors, and internal teams. Etterby was created to be the senior partner who ships the work and stays present until results are in motion."
+    - title: "How the work happens"
+      body:
+        - "Each project begins with a working session to surface the decisions you need to make. From there, sprints deliver production-ready models, instrumentation, and enablement materials—not slide decks. The same person designs the solution, implements it, and equips your team to run it."
+    - title: "What you can expect"
+      body:
+        - "Expect transparent plans, weekly momentum, and clear metrics that show progress. Engagements scale from a few focused weeks to multi-quarter partnerships, always with a founder at the table instead of a rotating agency bench."
+pillars:
+  title: "Three pillars of every engagement"
   items:
-    - title: "Evidence over opinion"
-      detail: "Decisions start with quantified baselines, measurable targets, and transparent assumptions."
-    - title: "Ship to learn"
-      detail: "Deliver production-ready increments quickly so teams can react, iterate, and adopt."
-    - title: "Enable the organisation"
-      detail: "Pair delivery with playbooks, training, and governance so capability remains after handover."
-credentials:
-  title: "Selected outcomes"
-  items:
-    - "Reduced fraudulent users from 10% to 0.6% with precision of 97% for a global marketplace."
-    - "Delivered price optimisation models that lifted daily revenue by 10%."
-    - "Implemented ThoughtSpot for enterprise restaurant brands, driving self-serve analytics adoption."
-contact_cta:
-  label: "Book a working session"
+    - title: "Evidence-first decisions"
+      description: "Quantified baselines and measurable targets anchor every recommendation, replacing guesswork with confidence."
+    - title: "Momentum through delivery"
+      description: "Working software, dashboards, and playbooks ship continuously so your teams can act before the quarter ends."
+    - title: "Enablement that sticks"
+      description: "Internal teams leave with training, governance, and documentation that keeps capability in-house after handover."
+proof:
+  title: "Signals the approach works"
+  points:
+    - "Dropped fraudulent activity from 10% to 0.6% for a global marketplace while maintaining 97% precision."
+    - "Lifted daily revenue by 10% through pricing experimentation for a hospitality group."
+    - "Rolled out ThoughtSpot across enterprise restaurant brands, unlocking self-serve analytics adoption."
+founder_quote:
+  quote: "Clients don\'t need another deck—they need a senior partner who ships the work and leaves the team stronger than they arrived."
+  name: "Founder, Etterby Analytics"
+cta:
+  title: "Ready to build momentum?"
+  description: "Book a working session to map the decisions in front of you and the data needed to back them."
+  label: "Schedule a working session"
   url: "/contact/"
-story:
-  title: "A different kind of analytics partner"
-  paragraphs:
-    - "The consultancy was created to give growth teams senior analytics leadership without the overhead that comes with large agencies. Every engagement is delivered by the founder, not a rotating squad of juniors."
-    - "Competitors often prioritise headcount and billable hours. Etterby Analytics focuses on a smaller roster of clients, keeping execution close to decision-makers and sharing playbooks so internal teams stay confident after handover."
