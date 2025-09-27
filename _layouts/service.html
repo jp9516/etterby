@@ -1,36 +1,52 @@
 ---
 layout: default
 ---
-<section class="container mx-auto px-6 py-16">
-  <div class="grid md:grid-cols-[2fr,1fr] gap-8">
-    <article class="space-y-6">
-      <header class="space-y-3">
-        <p class="text-xs uppercase tracking-wide opacity-70">{{ page.tagline }}</p>
-        <h1 class="text-3xl md:text-4xl font-semibold">{{ page.title }}</h1>
-        {% if page.summary %}
-          <p class="text-sm opacity-90 max-w-2xl">{{ page.summary }}</p>
-        {% endif %}
-      </header>
-      <div class="prose prose-invert max-w-none">
-        {{ content }}
+{% capture service_hero %}
+  <div class="space-y-4 max-w-3xl">
+    <p class="text-xs uppercase tracking-wide opacity-70">{{ page.tagline }}</p>
+    <h1 class="text-3xl md:text-4xl font-semibold">{{ page.title }}</h1>
+    {% if page.summary %}
+      <p class="text-sm opacity-90 max-w-2xl">{{ page.summary }}</p>
+    {% endif %}
+  </div>
+{% endcapture %}
+{% include section.html tone="plain" padding="py-16" content=service_hero %}
+
+{% capture service_content %}
+  <div class="grid md:grid-cols-[2fr,1fr] gap-8 items-start">
+    {% capture article_panel %}
+      <div class="space-y-6">
+        <div class="prose prose-invert max-w-none">
+          {{ content }}
+        </div>
       </div>
-    </article>
+    {% endcapture %}
+    {% include panel.html tone="ink" class="space-y-6" content=article_panel %}
+
     <aside class="space-y-6">
       {% if page.focus %}
-        <div class="p-6 rounded-2xl border border-white/10">
-          <h2 class="text-lg font-semibold mb-3">Focus areas</h2>
-          <ul class="space-y-2 text-sm opacity-80">
-            {% for item in page.focus %}
-              <li>• {{ item }}</li>
-            {% endfor %}
-          </ul>
-        </div>
+        {% capture focus_panel %}
+          <div class="space-y-3">
+            <h2 class="text-lg font-semibold">Focus areas</h2>
+            <ul class="space-y-2 text-sm opacity-80">
+              {% for item in page.focus %}
+                <li>• {{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endcapture %}
+        {% include panel.html tone="frost" class="space-y-3" content=focus_panel %}
       {% endif %}
-      <div class="p-6 rounded-2xl border border-white/10 space-y-3">
-        <h2 class="text-lg font-semibold">Book a call</h2>
-        <p class="text-sm opacity-80">Share your goals and we will map the quickest route to value.</p>
-        <a href="/contact/" class="block px-5 py-3 bg-brandblue text-white rounded-xl text-center">Discuss your project</a>
-      </div>
+
+      {% capture call_panel %}
+        <div class="space-y-3">
+          <h2 class="text-lg font-semibold">Book a call</h2>
+          <p class="text-sm opacity-80">Share your goals and we will map the quickest route to value.</p>
+          <a href="/contact/" class="block px-5 py-3 bg-brandblue text-white rounded-xl text-center">Discuss your project</a>
+        </div>
+      {% endcapture %}
+      {% include panel.html tone="solid" class="space-y-3" content=call_panel %}
     </aside>
   </div>
-</section>
+{% endcapture %}
+{% include section.html tone="blue" padding="py-16" content=service_content %}

@@ -1,0 +1,42 @@
+{% assign tone = include.tone | default: 'plain' %}
+{% assign padding = include.padding | default: 'py-20' %}
+{% assign outer_classes = padding %}
+{% assign overlay = '' %}
+{% case tone %}
+  {% when 'plain' %}
+    {% assign outer_classes = outer_classes %}
+  {% when 'frost' %}
+    {% assign outer_classes = outer_classes | append: ' bg-white/5 border-y border-white/5' %}
+  {% when 'ink' %}
+    {% assign outer_classes = outer_classes | append: ' bg-brandblack/80 border-y border-white/10' %}
+  {% when 'blue' %}
+    {% assign outer_classes = outer_classes | append: ' bg-brandblue/10 border-y border-brandblue/20' %}
+  {% when 'glow' %}
+    {% assign outer_classes = outer_classes | append: ' overflow-hidden' %}
+    {% assign overlay = 'bg-gradient-to-br from-brandblue/15 via-transparent to-white/10' %}
+  {% else %}
+    {% assign outer_classes = outer_classes %}
+{% endcase %}
+{% if include.class %}
+  {% assign outer_classes = outer_classes | append: ' ' | append: include.class %}
+{% endif %}
+{% assign container_classes = include.container_class | default: 'container mx-auto px-6' %}
+{% assign inner_classes = include.inner_class | default: '' %}
+{% assign use_container = include.container %}
+{% if use_container == nil %}
+  {% assign use_container = true %}
+{% endif %}
+<section{% if include.id %} id="{{ include.id }}"{% endif %} class="relative {{ outer_classes }}">
+  {% if overlay != '' %}
+    <div class="pointer-events-none absolute inset-0 {{ overlay }}"></div>
+  {% endif %}
+  {% if use_container == true or use_container == 'true' %}
+    <div class="relative {{ container_classes }} {{ inner_classes }}">
+      {{ include.content }}
+    </div>
+  {% else %}
+    <div class="relative {{ inner_classes }}">
+      {{ include.content }}
+    </div>
+  {% endif %}
+</section>

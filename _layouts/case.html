@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section class="container mx-auto px-6 py-16">
+{% capture case_hero %}
   <div class="space-y-4 max-w-3xl">
     <p class="text-xs uppercase tracking-wide opacity-70">
       {{ page.industry }}{% if page.services %} · {{ page.services | join: ', ' }}{% endif %}
@@ -12,33 +12,52 @@ layout: default
       <p class="text-sm opacity-90">{{ page.summary }}</p>
     {% endif %}
   </div>
+{% endcapture %}
+{% include section.html tone="plain" padding="py-16" content=case_hero %}
 
-  <div class="grid md:grid-cols-[2fr,1fr] gap-8 mt-10">
-    <article class="prose prose-invert max-w-none space-y-6">
-      {{ content }}
-    </article>
+{% capture case_body %}
+  <div class="grid md:grid-cols-[2fr,1fr] gap-8 items-start">
+    {% capture narrative_panel %}
+      <div class="prose prose-invert max-w-none space-y-6">
+        {{ content }}
+      </div>
+    {% endcapture %}
+    {% include panel.html tone="ink" class="space-y-6" content=narrative_panel %}
+
     <aside class="space-y-6">
       {% if page.results %}
-        <div class="p-6 rounded-2xl border border-white/10">
-          <h2 class="text-lg font-semibold mb-3">Impact</h2>
-          <ul class="space-y-2 text-sm opacity-80">
-            {% for result in page.results %}
-              <li>• {{ result }}</li>
-            {% endfor %}
-          </ul>
-        </div>
+        {% capture impact_panel %}
+          <div class="space-y-3">
+            <h2 class="text-lg font-semibold">Impact</h2>
+            <ul class="space-y-2 text-sm opacity-80">
+              {% for result in page.results %}
+                <li>• {{ result }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endcapture %}
+        {% include panel.html tone="frost" class="space-y-3" content=impact_panel %}
       {% endif %}
+
       {% if page.duration %}
-        <div class="p-6 rounded-2xl border border-white/10">
-          <h2 class="text-lg font-semibold mb-1">Engagement length</h2>
-          <p class="text-sm opacity-80">{{ page.duration }}</p>
-        </div>
+        {% capture duration_panel %}
+          <div class="space-y-2">
+            <h2 class="text-lg font-semibold">Engagement length</h2>
+            <p class="text-sm opacity-80">{{ page.duration }}</p>
+          </div>
+        {% endcapture %}
+        {% include panel.html tone="outline" class="space-y-2" content=duration_panel %}
       {% endif %}
-      <div class="p-6 rounded-2xl border border-white/10 space-y-3">
-        <h2 class="text-lg font-semibold">Plan your own engagement</h2>
-        <p class="text-sm opacity-80">Let's align on the outcomes you need and the path to get there.</p>
-        <a href="/contact/" class="block px-5 py-3 bg-brandblue text-white rounded-xl text-center">Book a call</a>
-      </div>
+
+      {% capture plan_panel %}
+        <div class="space-y-3">
+          <h2 class="text-lg font-semibold">Plan your own engagement</h2>
+          <p class="text-sm opacity-80">Let's align on the outcomes you need and the path to get there.</p>
+          <a href="/contact/" class="block px-5 py-3 bg-brandblue text-white rounded-xl text-center">Book a call</a>
+        </div>
+      {% endcapture %}
+      {% include panel.html tone="solid" class="space-y-3" content=plan_panel %}
     </aside>
   </div>
-</section>
+{% endcapture %}
+{% include section.html tone="blue" padding="py-16" content=case_body %}

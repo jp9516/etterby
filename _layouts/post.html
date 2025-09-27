@@ -2,67 +2,81 @@
 layout: default
 ---
 {% assign intro_text = page.description | default: page.subtitle | default: page.excerpt | strip_html | replace: "\n", " " | strip %}
-<section class="relative overflow-hidden border-b border-white/10">
-  <div class="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-white/5 opacity-40 pointer-events-none"></div>
-  <div class="container mx-auto px-6 py-20 relative">
-    <a href="/insights/" class="inline-flex items-center text-sm text-white/70 hover:text-white transition">
-      <span aria-hidden="true" class="mr-2">←</span> Back to insights
-    </a>
-    <div class="mt-8 max-w-3xl space-y-4">
-      <p class="text-xs uppercase tracking-[0.3em] text-white/60">{{ page.hero_label | default: "Insight" }}</p>
-      <h1 class="text-3xl md:text-5xl font-semibold leading-tight">{{ page.title }}</h1>
-      {% if intro_text %}
-        <p class="text-base md:text-lg text-white/80">{{ intro_text | strip_newlines }}</p>
-      {% endif %}
-      <dl class="flex flex-wrap gap-6 text-sm text-white/60 pt-2">
+{% capture post_hero %}
+  <a href="/insights/" class="inline-flex items-center text-sm text-white/70 hover:text-white transition">
+    <span aria-hidden="true" class="mr-2">←</span> Back to insights
+  </a>
+  <div class="mt-8 max-w-3xl space-y-4">
+    <p class="text-xs uppercase tracking-[0.3em] text-white/60">{{ page.hero_label | default: "Insight" }}</p>
+    <h1 class="text-3xl md:text-5xl font-semibold leading-tight">{{ page.title }}</h1>
+    {% if intro_text %}
+      <p class="text-base md:text-lg text-white/80">{{ intro_text | strip_newlines }}</p>
+    {% endif %}
+    <dl class="flex flex-wrap gap-6 text-sm text-white/60 pt-2">
+      <div class="flex items-center gap-2">
+        <dt class="uppercase tracking-wide">Published</dt>
+        <dd class="text-white/80">{{ page.date | date: "%d %B %Y" }}</dd>
+      </div>
+      {% if page.tags %}
         <div class="flex items-center gap-2">
-          <dt class="uppercase tracking-wide">Published</dt>
-          <dd class="text-white/80">{{ page.date | date: "%d %B %Y" }}</dd>
+          <dt class="uppercase tracking-wide">Topics</dt>
+          <dd class="text-white/80">{{ page.tags | join: ", " }}</dd>
         </div>
-        {% if page.tags %}
-          <div class="flex items-center gap-2">
-            <dt class="uppercase tracking-wide">Topics</dt>
-            <dd class="text-white/80">{{ page.tags | join: ", " }}</dd>
-          </div>
-        {% endif %}
-      </dl>
-    </div>
+      {% endif %}
+    </dl>
   </div>
-</section>
+{% endcapture %}
+{% include section.html tone="glow" padding="py-20" class="border-b border-white/10" content=post_hero %}
 
-<section class="container mx-auto px-6 py-16">
+{% capture post_body %}
   <div class="grid lg:grid-cols-[2fr,1fr] gap-12">
-    <article class="prose prose-invert prose-headings:font-semibold prose-a:text-brandblue max-w-none space-y-6">
-      {{ content }}
-    </article>
+    {% capture article_panel %}
+      <article class="prose prose-invert prose-headings:font-semibold prose-a:text-brandblue max-w-none space-y-6">
+        {{ content }}
+      </article>
+    {% endcapture %}
+    {% include panel.html tone="ink" class="space-y-6" content=article_panel %}
+
     <aside class="space-y-6">
       {% if intro_text %}
-        <div class="p-6 rounded-2xl border border-white/10 bg-white/5 space-y-3">
-          <h2 class="text-lg font-semibold">TLDR</h2>
-          <p class="text-sm text-white/70 leading-relaxed">{{ intro_text }}</p>
-        </div>
+        {% capture tldr_panel %}
+          <div class="space-y-3">
+            <h2 class="text-lg font-semibold">TLDR</h2>
+            <p class="text-sm text-white/70 leading-relaxed">{{ intro_text }}</p>
+          </div>
+        {% endcapture %}
+        {% include panel.html tone="frost" class="space-y-3" content=tldr_panel %}
       {% endif %}
-      <div class="p-6 rounded-2xl border border-white/10 space-y-3">
-        <h2 class="text-lg font-semibold">Talk through your own challenge</h2>
-        <p class="text-sm text-white/70">Share the context behind your data and analytics goals and we'll map the fastest path to value.</p>
-        <a href="/contact/" class="inline-flex items-center justify-center px-5 py-3 bg-brandblue text-white rounded-xl text-sm font-medium hover:bg-brandblue/80 transition">Book a call</a>
-      </div>
+
+      {% capture challenge_panel %}
+        <div class="space-y-3">
+          <h2 class="text-lg font-semibold">Talk through your own challenge</h2>
+          <p class="text-sm text-white/70">Share the context behind your data and analytics goals and we'll map the fastest path to value.</p>
+          <a href="/contact/" class="inline-flex items-center justify-center px-5 py-3 bg-brandblue text-white rounded-xl text-sm font-medium hover:bg-brandblue/80 transition">Book a call</a>
+        </div>
+      {% endcapture %}
+      {% include panel.html tone="solid" class="space-y-3" content=challenge_panel %}
+
       {% assign other_posts = site.posts | where_exp: "post", "post.url != page.url" %}
       {% if other_posts.size > 0 %}
-        <div class="p-6 rounded-2xl border border-white/10 space-y-4">
-          <h2 class="text-lg font-semibold">More insights</h2>
-          <ul class="space-y-3 text-sm">
-            {% for post in other_posts limit: 3 %}
-              <li>
-                <a href="{{ post.url }}" class="block group">
-                  <span class="text-white/80 group-hover:text-white transition">{{ post.title }}</span>
-                  <span class="block text-white/50 text-xs mt-1">{{ post.date | date: "%d %b %Y" }}</span>
-                </a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
+        {% capture more_panel %}
+          <div class="space-y-4">
+            <h2 class="text-lg font-semibold">More insights</h2>
+            <ul class="space-y-3 text-sm">
+              {% for post in other_posts limit: 3 %}
+                <li>
+                  <a href="{{ post.url }}" class="block group">
+                    <span class="text-white/80 group-hover:text-white transition">{{ post.title }}</span>
+                    <span class="block text-white/50 text-xs mt-1">{{ post.date | date: "%d %b %Y" }}</span>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endcapture %}
+        {% include panel.html tone="outline" class="space-y-4" content=more_panel %}
       {% endif %}
     </aside>
   </div>
-</section>
+{% endcapture %}
+{% include section.html tone="plain" padding="py-16" content=post_body %}

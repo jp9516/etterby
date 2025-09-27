@@ -5,8 +5,7 @@ description: "Consultancy engagements covering data platforms, analytics, experi
 ---
 {% assign page_content = site.data.services_page %}
 {% assign services = site.services | sort: 'position' %}
-
-<section class="container mx-auto px-6 py-16 space-y-8">
+{% capture services_intro %}
   <div class="flex flex-col gap-3 md:gap-4 max-w-3xl">
     <p class="text-xs uppercase tracking-wide opacity-70">{{ page_content.hero.eyebrow }}</p>
     <h1 class="text-3xl md:text-4xl font-semibold">{{ page_content.hero.title }}</h1>
@@ -14,61 +13,83 @@ description: "Consultancy engagements covering data platforms, analytics, experi
       <p class="opacity-90">{{ paragraph }}</p>
     {% endfor %}
   </div>
+{% endcapture %}
+
+{% capture services_cards %}
   <div class="grid md:grid-cols-2 gap-6">
     {% for service in services %}
-      <article class="p-6 rounded-2xl border border-white/10 flex flex-col gap-4">
-        <header>
-          <p class="text-xs uppercase tracking-wide opacity-70">{{ service.tagline }}</p>
-          <h2 class="text-xl font-semibold mt-1"><a href="{{ service.url }}">{{ service.title }}</a></h2>
-          <p class="text-sm opacity-90 mt-2">{{ service.summary }}</p>
-          {% if service.focus %}
-            <ul class="mt-3 text-xs uppercase tracking-wide opacity-70 flex flex-wrap gap-2">
-              {% for item in service.focus %}
-                <li class="px-2 py-1 rounded-full border border-white/10">{{ item }}</li>
-              {% endfor %}
-            </ul>
-          {% endif %}
-        </header>
-        <div class="prose prose-invert max-w-none text-sm">
-          {{ service.content | markdownify }}
+      {% capture service_panel %}
+        <div class="flex flex-col gap-4 h-full">
+          <header class="space-y-2">
+            <p class="text-xs uppercase tracking-wide opacity-70">{{ service.tagline }}</p>
+            <h2 class="text-xl font-semibold"><a href="{{ service.url }}">{{ service.title }}</a></h2>
+            <p class="text-sm opacity-90">{{ service.summary }}</p>
+            {% if service.focus %}
+              <ul class="pt-1 text-xs uppercase tracking-wide opacity-70 flex flex-wrap gap-2">
+                {% for item in service.focus %}
+                  <li class="px-2 py-1 rounded-full border border-white/10">{{ item }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </header>
+          <div class="prose prose-invert max-w-none text-sm">
+            {{ service.content | markdownify }}
+          </div>
+          <a href="{{ service.url }}" class="text-sm text-brandblue mt-auto">View service →</a>
         </div>
-        <a href="{{ service.url }}" class="text-sm text-brandblue">View service →</a>
-      </article>
+      {% endcapture %}
+      {% include panel.html tone="ink" class="h-full transition hover:border-brandblue/50" content=service_panel %}
     {% endfor %}
   </div>
-</section>
+{% endcapture %}
 
-<section class="container mx-auto px-6 pb-16">
-  <div class="rounded-2xl border border-white/10 p-8 md:p-10 bg-white/5">
+{% capture services_section %}
+  <div class="space-y-10">
+    {{ services_intro }}
+    {{ services_cards }}
+  </div>
+{% endcapture %}
+{% include section.html tone="plain" padding="py-16" content=services_section %}
+
+{% capture models_section %}
+  <div class="space-y-6">
     <h2 class="text-2xl font-semibold">{{ page_content.service_models.title }}</h2>
-    <div class="grid md:grid-cols-3 gap-6 mt-6">
+    <div class="grid md:grid-cols-3 gap-6">
       {% for model in page_content.service_models.items %}
-        <article class="p-5 rounded-xl border border-white/10">
-          <p class="text-xs uppercase tracking-wide opacity-70">{{ model.duration }}</p>
-          <h3 class="font-semibold mt-2">{{ model.name }}</h3>
-          <p class="text-sm opacity-90 mt-2">{{ model.detail }}</p>
-        </article>
+        {% capture model_panel %}
+          <div class="space-y-2">
+            <p class="text-xs uppercase tracking-wide opacity-70">{{ model.duration }}</p>
+            <h3 class="font-semibold">{{ model.name }}</h3>
+            <p class="text-sm opacity-90">{{ model.detail }}</p>
+          </div>
+        {% endcapture %}
+        {% include panel.html tone="frost" padding="p-5" content=model_panel %}
       {% endfor %}
     </div>
   </div>
-</section>
+{% endcapture %}
+{% include section.html tone="frost" padding="py-16" content=models_section %}
 
-<section class="container mx-auto px-6 pb-16">
+{% capture collaboration_section %}
   <div class="grid md:grid-cols-2 gap-8 items-start">
-    <div>
+    <div class="space-y-4">
       <h2 class="text-2xl font-semibold">{{ page_content.collaboration.title }}</h2>
-      <ul class="mt-4 space-y-3 text-sm opacity-90">
+      <ul class="space-y-3 text-sm opacity-90">
         {% for point in page_content.collaboration.points %}
           <li class="flex gap-3"><span class="text-brandblue">•</span><span>{{ point }}</span></li>
         {% endfor %}
       </ul>
     </div>
-    <div class="p-6 rounded-2xl border border-white/10 space-y-4">
-      <p class="text-sm opacity-80">Ready to explore a project?</p>
-      <div class="flex flex-col gap-3">
-        <a href="{{ page_content.ctas.primary.url }}" class="px-5 py-3 bg-brandblue text-white rounded-xl text-center">{{ page_content.ctas.primary.label }}</a>
-        <a href="{{ page_content.ctas.secondary.url }}" class="px-5 py-3 border border-white/20 rounded-xl text-center">{{ page_content.ctas.secondary.label }}</a>
+    {% capture cta_panel %}
+      <div class="space-y-4">
+        <p class="text-sm opacity-80">Ready to explore a project?</p>
+        <div class="flex flex-col gap-3">
+          <a href="{{ page_content.ctas.primary.url }}" class="px-5 py-3 bg-brandblue text-white rounded-xl text-center">{{ page_content.ctas.primary.label }}</a>
+          <a href="{{ page_content.ctas.secondary.url }}" class="px-5 py-3 border border-white/20 rounded-xl text-center">{{ page_content.ctas.secondary.label }}</a>
+        </div>
       </div>
-    </div>
+    {% endcapture %}
+    {% include panel.html tone="ink" class="space-y-4" content=cta_panel %}
   </div>
-</section>
+{% endcapture %}
+{% include section.html tone="blue" padding="py-16" content=collaboration_section %}

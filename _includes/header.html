@@ -1,20 +1,25 @@
-
-<header class="container mx-auto px-6 py-6 flex items-center justify-between">
-  <a href="/" class="flex items-center gap-2 group">
-    <img src="/assets/logo-mark.svg" alt="Etterby logo mark" class="w-7 h-7">
-    <span class="font-semibold tracking-tight text-lg">Etterby <span class="text-brandblue">Analytics</span></span>
-  </a>
-  <button id="navToggle" class="md:hidden border rounded-lg px-3 py-2">Menu</button>
-  <nav id="mainNav" class="hidden md:flex items-center gap-6 text-sm">
-    {% for item in site.data.nav %}
-      <a href="{{ item.url }}" class="hover:underline">{{ item.title }}</a>
-    {% endfor %}
+<header class="sticky top-0 z-50">
+  <div class="border-b border-white/10 bg-brandblack/90 backdrop-blur-lg">
+    <div class="container mx-auto px-6 py-5 flex items-center justify-between gap-6">
+      <a href="/" class="flex items-center gap-3 group">
+        <img src="/assets/logo-mark.svg" alt="Etterby logo mark" class="w-8 h-8 drop-shadow-[0_6px_16px_rgba(30,95,255,0.45)] group-hover:scale-105 transition-transform">
+        <span class="font-semibold tracking-tight text-lg text-white/90 group-hover:text-white transition">Etterby <span class="text-brandblue">Analytics</span></span>
+      </a>
+      <button id="navToggle" class="md:hidden flex items-center gap-2 border border-white/20 rounded-lg px-3 py-2 text-sm text-white/80" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+      <nav id="mainNav" class="hidden md:flex items-center gap-6 text-sm text-white/70">
+        {% for item in site.data.nav %}
+          <a href="{{ item.url }}" class="hover:text-white transition">{{ item.title }}</a>
+        {% endfor %}
+        <a href="/contact/" class="inline-flex items-center justify-center px-4 py-2 rounded-lg border border-brandblue/60 text-white/90 hover:bg-brandblue hover:border-brandblue transition">Work together</a>
+      </nav>
+    </div>
+  </div>
+  <nav id="mobileNav" class="md:hidden hidden border-b border-white/10 bg-brandblack/95">
+    <div class="container mx-auto px-6 py-4 flex flex-col gap-3 text-sm text-white/80">
+      {% for item in site.data.nav %}
+        <a href="{{ item.url }}" class="py-1 hover:text-white transition">{{ item.title }}</a>
+      {% endfor %}
+      <a href="/contact/" class="mt-2 inline-flex items-center justify-center px-4 py-2 rounded-lg bg-brandblue text-white">Work together</a>
+    </div>
   </nav>
 </header>
-<nav id="mobileNav" class="md:hidden hidden px-6">
-  <div class="flex flex-col gap-3 text-sm pb-4 border-b border-white/10">
-    {% for item in site.data.nav %}
-      <a href="{{ item.url }}" class="hover:underline">{{ item.title }}</a>
-    {% endfor %}
-  </div>
-</nav>
