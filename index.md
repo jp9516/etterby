@@ -10,9 +10,9 @@ description: "Reliable pipelines, clear metrics, and practical ML for product an
     <p class="text-lg max-w-2xl">
       Etterby Analytics is a Carlisle-based consultancy that helps product and operations teams across Cumbria, throughout the UK, and select global partners ship reliable data pipelines, clear metrics, and practical ML – without drama.
     </p>
-    <div class="flex flex-wrap gap-4">
+    <div class="flex flex-wrap gap-4 items-center">
       <a href="/contact/" class="inline-flex items-center justify-center rounded-full bg-brandblue px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-brandblue/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brandblue/40">Book a call</a>
-      <a href="/services/" class="inline-flex items-center justify-center rounded-full border border-brandblack/30 px-6 py-3 text-base font-semibold text-brandblack/80 transition hover:border-brandblue/60 hover:text-brandblue focus:outline-none focus-visible:ring-2 focus-visible:ring-brandblue/40 dark:border-white/30 dark:text-white/80">View services</a>
+      <a href="/services/" class="text-base font-medium text-brandblack/70 transition hover:text-brandblue focus-visible:underline dark:text-white/70">View services</a>
     </div>
   </div>
 {% endcapture %}
