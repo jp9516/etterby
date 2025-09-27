@@ -1,0 +1,32 @@
+hero:
+  eyebrow: "How we help"
+  title: "Engagement models that unblock your roadmap"
+  description:
+    - "We start with the decision you need to make or the reliability target you need to hit. Then we combine engineering, analytics, and data science capabilities to deliver the smallest viable slice that proves value."
+    - "Everything is versioned, automated, and documented so your team can extend it after we ship."
+service_models:
+  title: "Common engagement patterns"
+  items:
+    - name: "Foundations sprint"
+      duration: "4–6 weeks"
+      detail: "Stabilise pipelines, define metrics, and establish deployment practices so your team can move fast without breakage."
+    - name: "Analytics partner"
+      duration: "Quarterly retainer"
+      detail: "Hands-on delivery plus coaching for product, ops, and finance teams that need ongoing insights."
+    - name: "ML delivery pod"
+      duration: "8–16 weeks"
+      detail: "From framing to production monitoring for a focused use case—experimentation, forecasting, or detection."
+collaboration:
+  title: "How we collaborate"
+  points:
+    - "Dedicated Slack channel with <24h async response times"
+    - "Weekly steering with clear deliverables and risk tracking"
+    - "Playbooks, runbooks, and handover sessions for internal teams"
+    - "Tooling access and credentials managed through your SSO"
+ctas:
+  primary:
+    label: "Discuss a project"
+    url: "/contact/"
+  secondary:
+    label: "See recent work"
+    url: "/work/"

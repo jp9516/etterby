@@ -1,0 +1,20 @@
+services:
+  title: "Services"
+  description: "Targeted engagements to unblock analytics roadmaps, make metrics trustworthy, and bring the right ML into production."
+  view_all:
+    label: "Explore all services"
+    url: "/services/"
+work:
+  title: "Selected work"
+  description: "Recent engagements that show how we deliver reliable data foundations and measurable impact."
+  limit: 2
+  view_all:
+    label: "Browse work"
+    url: "/work/"
+insights:
+  title: "Latest insights"
+  description: "Notes on analytics operations, experimentation, and ML that you can apply this quarter."
+  limit: 3
+  view_all:
+    label: "See all insights"
+    url: "/insights/"

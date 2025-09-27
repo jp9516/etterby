@@ -1,16 +1,81 @@
-
 ---
 layout: default
 title: "Work"
 ---
-<section class="container mx-auto px-6 py-16">
-  <h1 class="text-3xl md:text-4xl font-semibold mb-6">Selected Work</h1>
-  <div class="grid md:grid-cols-2 gap-6">
-    {% for item in site.work %}
-      <a href="{{ item.url }}" class="p-6 rounded-2xl border border-white/10 hover:border-brandblue transition block">
-        <h3 class="font-semibold mb-2">{{ item.title }}</h3>
-        <p class="text-sm opacity-90">{{ item.client }}</p>
-      </a>
+{% assign page_content = site.data.work_page %}
+{% assign work_items = site.work | sort: 'position' %}
+
+<section class="container mx-auto px-6 py-16 space-y-12">
+  <div class="max-w-3xl space-y-4">
+    <p class="text-xs uppercase tracking-wide opacity-70">{{ page_content.hero.eyebrow }}</p>
+    <h1 class="text-3xl md:text-4xl font-semibold">{{ page_content.hero.title }}</h1>
+    {% for paragraph in page_content.hero.description %}
+      <p class="opacity-90">{{ paragraph }}</p>
     {% endfor %}
+  </div>
+
+  <div class="grid md:grid-cols-[2fr,1fr] gap-8">
+    <div class="space-y-6">
+      {% for item in work_items %}
+        <article class="p-6 rounded-2xl border border-white/10 space-y-4">
+          <header class="space-y-2">
+            <p class="text-xs uppercase tracking-wide opacity-70 flex gap-3 flex-wrap">
+              <span>{{ item.industry }}</span>
+              {% if item.services %}
+                <span class="opacity-60">·</span>
+                <span>{{ item.services | join: ', ' }}</span>
+              {% endif %}
+            </p>
+            <h2 class="text-2xl font-semibold"><a href="{{ item.url }}">{{ item.title }}</a></h2>
+            <p class="text-sm opacity-90">{{ item.summary }}</p>
+          </header>
+          <div class="text-sm opacity-80 space-y-2">
+            {% if item.results %}
+              <h3 class="font-semibold text-xs uppercase tracking-wide opacity-70">Impact</h3>
+              <ul class="space-y-1">
+                {% for result in item.results %}
+                  <li>• {{ result }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+            {% if item.duration %}
+              <p class="text-xs uppercase tracking-wide opacity-60">Engagement length: {{ item.duration }}</p>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+    <aside class="space-y-8">
+      <div class="p-6 rounded-2xl border border-white/10">
+        <h2 class="text-lg font-semibold mb-3">{{ page_content.filters.title }}</h2>
+        <ul class="space-y-2 text-sm opacity-80">
+          {% for filter in page_content.filters.items %}
+            <li>• {{ filter }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="p-6 rounded-2xl border border-white/10 space-y-4">
+        <h2 class="text-lg font-semibold">Delivery snapshot</h2>
+        <dl class="space-y-3">
+          {% for stat in page_content.stats %}
+            <div>
+              <dt class="text-xs uppercase tracking-wide opacity-60">{{ stat.label }}</dt>
+              <dd class="text-lg font-semibold">{{ stat.value }}</dd>
+            </div>
+          {% endfor %}
+        </dl>
+      </div>
+      <div class="p-6 rounded-2xl border border-white/10">
+        <h2 class="text-lg font-semibold mb-3">{{ page_content.process.title }}</h2>
+        <ol class="space-y-3 text-sm opacity-80">
+          {% for step in page_content.process.steps %}
+            <li>
+              <span class="block font-semibold text-white">{{ step.title }}</span>
+              <span>{{ step.detail }}</span>
+            </li>
+          {% endfor %}
+        </ol>
+      </div>
+    </aside>
   </div>
 </section>

@@ -1,0 +1,30 @@
+hero:
+  eyebrow: "About Etterby"
+  title: "Analytics, ML, and automation without the theatre"
+  description:
+    - "Etterby Analytics is the independent practice of James Pearson. After a decade across startups and scaleups, the focus is simple: partner with teams who value clear thinking, measurable outcomes, and sustainable delivery."
+profile:
+  title: "Founder"
+  name: "James Pearson"
+  bio:
+    - "Former Head of Data & ML at venture-backed marketplaces and fintech scaleups."
+    - "Built teams covering analytics engineering, product analytics, data science, and ML platform."
+    - "Speaker and mentor on data leadership, experimentation, and production ML."
+values:
+  title: "Principles that guide every engagement"
+  items:
+    - title: "Outcome first"
+      detail: "Start from the business decision, then design the data and ML needed to support it."
+    - title: "Bias for shipping"
+      detail: "Favour iterative delivery with visible progress, not endless design docs."
+    - title: "Enable the team"
+      detail: "Invest in documentation, tooling, and training so the solution sticks."
+credentials:
+  title: "Selected experience"
+  items:
+    - "Built fraud & trust analytics at an EU classifieds marketplace serving 30M MAU."
+    - "Led revenue analytics for a B2B SaaS platform during expansion from Series B to D."
+    - "Designed experimentation frameworks adopted by product and growth teams globally."
+contact_cta:
+  label: "Book a call"
+  url: "/contact/"

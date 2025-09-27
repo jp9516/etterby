@@ -1,0 +1,19 @@
+hero:
+  eyebrow: "Insights"
+  title: "Playbooks for analytics leaders"
+  description:
+    - "Short reads on running reliable data organisations, measuring product impact, and using ML where it matters."
+categories:
+  title: "Topics you can explore"
+  items:
+    - name: "Data operations"
+      detail: "Pipelines, observability, and governance that keep trust high."
+    - name: "Product analytics"
+      detail: "Decision-making frameworks and experimentation techniques."
+    - name: "Applied ML"
+      detail: "Detection, forecasting, and automation that make a difference."
+newsletter:
+  title: "Stay in the loop"
+  body: "A quarterly note with field-tested tactics for data leaders—no spam, no fluff."
+  cta_label: "Join the list"
+  cta_url: "https://etterby.com/newsletter"
