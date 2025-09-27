@@ -1,4 +1,3 @@
-
 ---
 title: "Terms & Conditions"
 description: "Website terms for Etterby Analytics covering use of content, engagements, and limitations of liability."
