@@ -31,6 +31,18 @@ description: "Start a conversation with James Pearson about analytics, experimen
       </div>
     {% endcapture %}
     {% include panel.html tone="ink" class="space-y-6 max-w-3xl" content=form_panel %}
+    {% capture linkedin_panel %}
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div class="space-y-1">
+          <p class="font-medium text-white/90">Connect on LinkedIn</p>
+          <p class="text-sm text-white/60">Stay up to date with analytics insights and message James directly.</p>
+        </div>
+        <a href="https://www.linkedin.com/in/james-pearson-etterby" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg border border-white/20 text-white/80 hover:text-white hover:border-white/40 transition" target="_blank" rel="noopener">
+          <span>View profile</span>
+        </a>
+      </div>
+    {% endcapture %}
+    {% include panel.html tone="outline" class="max-w-3xl" content=linkedin_panel %}
   </div>
 {% endcapture %}
 {% include section.html tone="plain" padding="py-16" content=contact_section %}
