@@ -19,18 +19,10 @@ description: "Consultancy engagements covering data platforms, analytics, experi
   <div class="grid md:grid-cols-2 gap-6">
     {% for service in services %}
       {% capture service_panel %}
-        <div class="flex flex-col gap-4 h-full">
-          <header class="space-y-2">
-            <p class="text-xs uppercase tracking-wide opacity-70">{{ service.tagline }}</p>
+        <div class="flex flex-col gap-3 h-full">
+          <header class="space-y-1">
             <h2 class="text-xl font-semibold"><a href="{{ service.url }}">{{ service.title }}</a></h2>
             <p class="text-sm opacity-90">{{ service.summary }}</p>
-            {% if service.focus %}
-              <ul class="pt-1 text-xs uppercase tracking-wide opacity-70 flex flex-wrap gap-2">
-                {% for item in service.focus %}
-                  <li class="px-2 py-1 rounded-full border border-brandblack/20 dark:border-white/10">{{ item }}</li>
-                {% endfor %}
-              </ul>
-            {% endif %}
           </header>
           <a href="{{ service.url }}" class="text-sm text-brandblue mt-auto">View service →</a>
         </div>
