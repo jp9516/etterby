@@ -6,7 +6,7 @@ services:
   - Revenue & Lifecycle Intelligence
   - Experimentation, Forecasting & Applied ML
 duration: "10 weeks"
-position: 3
+position: 5
 featured: false
 summary: "Delivered dynamic pricing and forecasting models that lifted daily revenue by 10%."
 description: "James Pearson combined experimentation, predictive modelling, and stakeholder enablement to embed pricing science into commercial planning."

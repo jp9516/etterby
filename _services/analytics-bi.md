@@ -1,6 +1,6 @@
 ---
 title: "Analytics, BI & Enablement"
-position: 2
+position: 3
 tagline: "Semantic layers, KPI frameworks, and embedded analytics people adopt."
 summary: "Define metrics once, serve them everywhere, and enable teams with workshops, playbooks, and support."
 description: "Frameworks proven across Vita Mojo, Subway, Leon, and finance teams needing consistent reporting."
