@@ -5,8 +5,7 @@ description: "Experimentation, pricing, and analytics leadership lessons from Ja
 ---
 {% assign page_content = site.data.insights_page %}
 {% assign posts = site.posts %}
-
-<section class="container mx-auto px-6 py-16 space-y-12">
+{% capture insights_hero %}
   <div class="max-w-3xl space-y-4">
     <p class="text-xs uppercase tracking-wide opacity-70">{{ page_content.hero.eyebrow }}</p>
     <h1 class="text-3xl md:text-4xl font-semibold">{{ page_content.hero.title }}</h1>
@@ -14,39 +13,55 @@ description: "Experimentation, pricing, and analytics leadership lessons from Ja
       <p class="opacity-90">{{ paragraph }}</p>
     {% endfor %}
   </div>
+{% endcapture %}
+{% include section.html tone="plain" padding="py-16" content=insights_hero %}
 
+{% capture category_grid %}
   <div class="grid md:grid-cols-3 gap-6">
     {% for category in page_content.categories.items %}
-      <div class="p-6 rounded-2xl border border-white/10 space-y-2">
-        <h2 class="text-lg font-semibold">{{ category.name }}</h2>
-        <p class="text-sm opacity-80">{{ category.detail }}</p>
-      </div>
+      {% capture category_panel %}
+        <div class="space-y-2">
+          <h2 class="text-lg font-semibold">{{ category.name }}</h2>
+          <p class="text-sm opacity-80">{{ category.detail }}</p>
+        </div>
+      {% endcapture %}
+      {% include panel.html tone="frost" class="space-y-2" content=category_panel %}
     {% endfor %}
   </div>
+{% endcapture %}
+{% include section.html tone="frost" padding="py-16" content=category_grid %}
 
+{% capture articles_section %}
   <div class="space-y-6">
     <h2 class="text-2xl font-semibold">Latest articles</h2>
     {% if posts.size > 0 %}
       <div class="grid md:grid-cols-3 gap-6">
         {% for post in posts %}
-          <article class="p-6 rounded-2xl border border-white/10 flex flex-col gap-3">
-            <div>
-              <p class="text-xs uppercase tracking-wide opacity-70">{{ post.date | date: "%d %b %Y" }}</p>
-              <h3 class="font-semibold text-lg"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          {% capture post_panel %}
+            <div class="flex flex-col gap-3 h-full">
+              <div>
+                <p class="text-xs uppercase tracking-wide opacity-70">{{ post.date | date: "%d %b %Y" }}</p>
+                <h3 class="font-semibold text-lg"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+              </div>
+              <p class="text-sm opacity-80">{{ post.excerpt | strip_html | truncate: 140 }}</p>
+              <a href="{{ post.url }}" class="text-sm text-brandblue mt-auto">Read more →</a>
             </div>
-            <p class="text-sm opacity-80">{{ post.excerpt | strip_html | truncate: 140 }}</p>
-            <a href="{{ post.url }}" class="text-sm text-brandblue mt-auto">Read more →</a>
-          </article>
+          {% endcapture %}
+          {% include panel.html tone="ink" class="h-full" content=post_panel %}
         {% endfor %}
       </div>
     {% else %}
       <p class="opacity-80">Publish a post in <code>_posts/</code> to populate this list.</p>
     {% endif %}
   </div>
+{% endcapture %}
+{% include section.html tone="blue" padding="py-16" content=articles_section %}
 
-  <div class="p-8 rounded-2xl border border-white/10 bg-white/5 space-y-4">
+{% capture newsletter_panel %}
+  <div class="space-y-4">
     <h2 class="text-2xl font-semibold">{{ page_content.newsletter.title }}</h2>
     <p class="opacity-80">{{ page_content.newsletter.body }}</p>
     <a href="{{ page_content.newsletter.cta_url }}" class="inline-flex px-5 py-3 bg-brandblue text-white rounded-xl">{{ page_content.newsletter.cta_label }}</a>
   </div>
-</section>
+{% endcapture %}
+{% include section.html tone="glow" padding="py-16" content=newsletter_panel %}
