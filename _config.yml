@@ -40,7 +40,6 @@ company:
   legal_name: "Etterby Analytics Ltd"
   url: "https://etterby.com"
   email: "hello@etterby.com"
-  telephone: "+44 20 1234 5678"
   description: "Independent analytics consultancy led by James Pearson delivering data platforms, experimentation, and forecasting."
   logo: "/assets/og-image.png"
   same_as:
