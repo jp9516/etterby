@@ -77,7 +77,7 @@ description: "Learn how Etterby Analytics operates, the founder-led principles b
         <div class="space-y-3 text-center">
           <h2 class="text-lg font-semibold">Ready to collaborate?</h2>
           <p class="text-sm text-brandblack/70 dark:text-white/70">Discuss your analytics roadmap and the momentum Etterby Analytics can unlock.</p>
-          <a href="{{ page_content.contact_cta.url }}" class="inline-flex justify-center px-5 py-3 bg-brandblue text-white rounded-xl">{{ page_content.contact_cta.label }}</a>
+          <a href="{{ page_content.contact_cta.url }}" class="inline-flex items-center justify-center rounded-full bg-brandblue px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-brandblue/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brandblue/40">{{ page_content.contact_cta.label }}</a>
         </div>
       {% endcapture %}
       {% include panel.html tone="solid" class="space-y-3" content=contact_panel %}

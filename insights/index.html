@@ -61,7 +61,7 @@ description: "Experimentation, pricing, and analytics leadership lessons from Et
   <div class="space-y-4">
     <h2 class="text-2xl font-semibold">{{ page_content.newsletter.title }}</h2>
     <p class="opacity-80">{{ page_content.newsletter.body }}</p>
-    <a href="{{ page_content.newsletter.cta_url }}" class="inline-flex px-5 py-3 bg-brandblue text-white rounded-xl">{{ page_content.newsletter.cta_label }}</a>
+    <a href="{{ page_content.newsletter.cta_url }}" class="inline-flex items-center justify-center rounded-full bg-brandblue px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-brandblue/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brandblue/40">{{ page_content.newsletter.cta_label }}</a>
   </div>
 {% endcapture %}
 {% include section.html tone="glow" padding="py-16" content=newsletter_panel %}

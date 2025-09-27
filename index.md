@@ -11,8 +11,8 @@ description: "Reliable pipelines, clear metrics, and practical ML for product an
       Etterby Analytics is a Carlisle-based consultancy that helps product and operations teams across Cumbria, throughout the UK, and select global partners ship reliable data pipelines, clear metrics, and practical ML – without drama.
     </p>
     <div class="flex flex-wrap gap-4">
-      <a href="/contact/" class="px-5 py-3 bg-brandblue text-white rounded-xl hover:bg-brandblue/90 transition">Book a call</a>
-      <a href="/services/" class="px-5 py-3 border border-brandblack/30 dark:border-white/30 rounded-xl hover:border-brandblue/60 transition">View services</a>
+      <a href="/contact/" class="inline-flex items-center justify-center rounded-full bg-brandblue px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-brandblue/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brandblue/40">Book a call</a>
+      <a href="/services/" class="inline-flex items-center justify-center rounded-full border border-brandblack/30 px-6 py-3 text-base font-semibold text-brandblack/80 transition hover:border-brandblue/60 hover:text-brandblue focus:outline-none focus-visible:ring-2 focus-visible:ring-brandblue/40 dark:border-white/30 dark:text-white/80">View services</a>
     </div>
   </div>
 {% endcapture %}
@@ -25,7 +25,7 @@ description: "Reliable pipelines, clear metrics, and practical ML for product an
       <h2 class="text-3xl font-semibold">{{ home_services.title }}</h2>
       <p class="mt-2 opacity-80 max-w-2xl">{{ home_services.description }}</p>
     </div>
-    <a href="{{ home_services.view_all.url }}" class="inline-flex px-5 py-3 bg-brandblue text-white rounded-xl text-sm uppercase tracking-wide hover:bg-brandblue/90 transition">{{ home_services.view_all.label }}</a>
+    <a href="{{ home_services.view_all.url }}" class="inline-flex items-center justify-center rounded-full bg-brandblue px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-sm transition hover:bg-brandblue/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brandblue/40">{{ home_services.view_all.label }}</a>
   </div>
 {% endcapture %}
 {% assign services = site.services | sort: 'position' %}
@@ -66,7 +66,7 @@ description: "Reliable pipelines, clear metrics, and practical ML for product an
       <h2 class="text-3xl font-semibold">{{ home_work.title }}</h2>
       <p class="mt-2 opacity-80 max-w-2xl">{{ home_work.description }}</p>
     </div>
-    <a href="{{ home_work.view_all.url }}" class="inline-flex px-5 py-3 bg-brandblue text-white rounded-xl text-sm uppercase tracking-wide hover:bg-brandblue/90 transition">{{ home_work.view_all.label }}</a>
+    <a href="{{ home_work.view_all.url }}" class="inline-flex items-center justify-center rounded-full bg-brandblue px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-sm transition hover:bg-brandblue/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brandblue/40">{{ home_work.view_all.label }}</a>
   </div>
 {% endcapture %}
 {% assign featured_work = site.work | where_exp: 'item', 'item.featured != false' | sort: 'position' %}
