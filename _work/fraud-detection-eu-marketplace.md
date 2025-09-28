@@ -1,5 +1,5 @@
 ---
-title: "Fraud detection uplift for European marketplace"
+title: "Fraud detection uplift"
 client: "Dating Marketplace (Europe)"
 industry: "Marketplaces"
 services:
