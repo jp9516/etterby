@@ -3,7 +3,7 @@ title: "Experimentation, Forecasting & Applied ML"
 position: 5
 tagline: "Practical models and test programmes tied directly to commercial metrics."
 summary: "Frame the decision, design robust experiments or models, and keep them accountable in production."
-description: "From fraud detection to revenue forecasting, every build is anchored in a decade of founder-led decision science delivery."
+description: "From fraud detection to revenue forecasting, every build is anchored in a decade of founder led decision science delivery."
 focus:
   - Experimentation
   - Forecasting
@@ -17,8 +17,8 @@ focus:
 
 **Outcomes**
 - Fraud, pricing, or lifecycle models that reach production with measurable ROI
-- Automated experiment read-outs and forecasting that finance and product can trust
+- Automated experiment read outs and forecasting that finance and product can trust
 - Playbooks for ongoing monitoring, retraining, and stakeholder communication
 
 **Stack**
-Python, scikit-learn, XGBoost, ClickHouse, dbt, Superset, ThoughtSpot
+Python, scikit learn, XGBoost, ClickHouse, dbt, Superset, ThoughtSpot

@@ -1,6 +1,6 @@
 
 title: "Etterby Analytics"
-description: "Premium, minimal, outcomes-first analytics consulting. Pipelines, metrics, and ML that ship and stick."
+description: "Premium, minimal, outcomes first analytics consulting. Pipelines, metrics, and ML that ship and stick."
 url: "https://etterby.com"  # set to https://etterby.com when live
 baseurl: ""  # set to /analytics only if using subpath
 google_analytics:
@@ -47,9 +47,9 @@ company:
   same_as:
     - "https://www.linkedin.com/company/etterby-analytics/"
   address:
-    street_address: "Remote-first"
+    street_address: "Remote first"
     address_locality: "London"
     address_region: "England"
     postal_code: ""
     address_country: "GB"
-  founder: "Founder-led analytics team"
+  founder: "Founder led analytics team"

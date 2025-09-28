@@ -9,7 +9,7 @@ duration: "16 weeks"
 position: 1
 featured: true
 summary: "Rebuilt trust & safety analytics and launched fraud models that cut abusive users from 10% to 0.6%."
-description: "Founder-led delivery end-to-end - from modernising the ClickHouse/dbt stack to deploying Python services with clear governance."
+description: "Founder led delivery end to end - from modernising the ClickHouse/dbt stack to deploying Python services with clear governance."
 results:
   - "Reduced fraudulent users from 10% to 0.6% at 97% precision and 86% detection."
   - "Average detection window improved by 40 days with automated takedown workflows."
@@ -17,7 +17,7 @@ results:
 ---
 
 ### Problem
-Large volumes of short-lived accounts made manual review ineffective. Losses, user trust, and compliance targets were at risk.
+Large volumes of short lived accounts made manual review ineffective. Losses, user trust, and compliance targets were at risk.
 
 ### Solution
 - Data pipeline overhaul (dbt + Airflow + ClickHouse) to unify trust & safety signals

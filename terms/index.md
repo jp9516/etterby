@@ -11,7 +11,7 @@ description: "Website terms for Etterby Analytics covering use of content, engag
 
     <div class="space-y-3">
       <h2 class="text-xl font-semibold">Use of content</h2>
-      <p class="opacity-90">All articles, case studies, and materials on this site are provided for general information. They do not constitute professional advice or a guarantee of results. You may reference content for internal, non-commercial purposes provided attribution is retained. Copying or distributing content for commercial gain requires written permission.</p>
+      <p class="opacity-90">All articles, case studies, and materials on this site are provided for general information. They do not constitute professional advice or a guarantee of results. You may reference content for internal, non commercial purposes provided attribution is retained. Copying or distributing content for commercial gain requires written permission.</p>
     </div>
 
     <div class="space-y-3">
@@ -26,7 +26,7 @@ description: "Website terms for Etterby Analytics covering use of content, engag
 
     <div class="space-y-3">
       <h2 class="text-xl font-semibold">Confidentiality & data protection</h2>
-      <p class="opacity-90">Etterby Analytics treats all client materials as confidential and uses them solely for the agreed engagement. Mutual non-disclosure agreements can be executed on request. Personal data is handled in line with the <a class="underline" href="/privacy/">Privacy Policy</a>.</p>
+      <p class="opacity-90">Etterby Analytics treats all client materials as confidential and uses them solely for the agreed engagement. Mutual non disclosure agreements can be executed on request. Personal data is handled in line with the <a class="underline" href="/privacy/">Privacy Policy</a>.</p>
     </div>
 
     <div class="space-y-3">
@@ -35,8 +35,8 @@ description: "Website terms for Etterby Analytics covering use of content, engag
     </div>
 
     <div class="space-y-3">
-      <h2 class="text-xl font-semibold">Third-party links</h2>
-      <p class="opacity-90">Links to external sites are provided for convenience only. Etterby Analytics does not endorse or accept responsibility for third-party content or practices.</p>
+      <h2 class="text-xl font-semibold">Third party links</h2>
+      <p class="opacity-90">Links to external sites are provided for convenience only. Etterby Analytics does not endorse or accept responsibility for third party content or practices.</p>
     </div>
 
     <div class="space-y-3">

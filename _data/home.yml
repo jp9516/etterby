@@ -6,14 +6,14 @@ services:
     url: "/services/"
 work:
   title: "Selected work"
-  description: "Case studies covering fraud reduction, price optimisation, and analytics enablement for organisations across Cumbria, UK scale-ups, and select global marketplaces."
+  description: "Case studies covering fraud reduction, price optimisation, and analytics enablement for organisations across Cumbria, UK scale ups, and select global marketplaces."
   limit: 2
   view_all:
     label: "Explore all work"
     url: "/work/"
 insights:
   title: "Latest insights"
-  description: "Field-tested playbooks on experimentation, forecasting, and analytics leadership drawn from 11+ years in data roles."
+  description: "Field tested playbooks on experimentation, forecasting, and analytics leadership drawn from 11+ years in data roles."
   limit: 3
   view_all:
     label: "EXPORE ALL INSIGHTS"

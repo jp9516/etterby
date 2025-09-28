@@ -13,12 +13,12 @@ focus:
 **Where each engagement starts**
 - Map critical decisions, data sources, and the definitions that are currently disputed
 - Design a governed semantic layer or ThoughtSpot/BI model that reflects how teams operate
-- Prioritise the dashboards, alerts, and self-serve journeys that matter for revenue and operations
+- Prioritise the dashboards, alerts, and self serve journeys that matter for revenue and operations
 
 **Outcomes**
 - Metric definitions aligned across finance, product, and operations with clear ownership
-- Dashboards and search-driven analytics that load quickly and answer follow-up questions
-- Training cadences that drive adoption and lower reliance on ad-hoc requests
+- Dashboards and search driven analytics that load quickly and answer follow up questions
+- Training cadences that drive adoption and lower reliance on ad hoc requests
 
 **Stack**
 ThoughtSpot, Superset, dbt metrics, Power BI, Hex

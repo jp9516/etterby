@@ -3,7 +3,7 @@ title: "Revenue & Lifecycle Intelligence"
 position: 6
 tagline: "Pricing, retention, and forecasting programmes that influence the P&L."
 summary: "Blend predictive modelling, experimentation, and stakeholder storytelling to unlock revenue and customer lifetime value."
-description: "Battle-tested through price optimisation, lifecycle forecasts, and exec reporting delivered for Xcelirate and global gaming brands."
+description: "Battle tested through price optimisation, lifecycle forecasts, and exec reporting delivered for Xcelirate and global gaming brands."
 focus:
   - Pricing
   - Forecasting
@@ -13,7 +13,7 @@ focus:
 **Where each engagement starts**
 - Understand the revenue motions, lifecycle triggers, and decisions you need to influence
 - Audit historic pricing tests, retention cohorts, and data availability
-- Co-create a roadmap covering modelling, experimentation, and communication milestones
+- Co create a roadmap covering modelling, experimentation, and communication milestones
 
 **Outcomes**
 - Pricing and lifecycle recommendations with measurable impact on revenue and retention

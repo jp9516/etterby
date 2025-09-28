@@ -1,13 +1,13 @@
 hero:
   eyebrow: "Insights"
-  title: "Insights shaped by hands-on delivery"
+  title: "Insights shaped by hands on delivery"
   description:
-    - "Field-tested guidance on experimentation, forecasting, and analytics leadership pulled from shipping platforms, pricing models, and enablement programmes."
-    - "Pragmatic lessons on GA4 tagging, dashboard adoption, and self-service design delivered across restaurants, retail, and SaaS."
+    - "Field tested guidance on experimentation, forecasting, and analytics leadership pulled from shipping platforms, pricing models, and enablement programmes."
+    - "Pragmatic lessons on GA4 tagging, dashboard adoption, and self service design delivered across restaurants, retail, and SaaS."
 categories:
   title: "Topics you can explore"
   items:
-    - name: "Self-service analytics"
+    - name: "Self service analytics"
       detail: "Designing dashboards, narratives, and rituals that keep teams engaged without extra analyst effort."
     - name: "Digital tagging & instrumentation"
       detail: "Making GA4, consent, and event design dependable so marketing and product see the same numbers."
