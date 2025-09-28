@@ -12,6 +12,6 @@ Marketplaces and regulated gaming operators asked Etterby Analytics to modernise
 
 ### Takeaways
 - Quiet launches expose blind spots early and build confidence before deprecating heuristics.
-- Governance, change management, and training are the differentiators that kept fraud programmes for the global dating marketplace and online gambling brands on target.
+- Governance, change management, and training are the differentiators that kept fraud programmes for global marketplaces and online gambling brands on target.
 - The same playbook supports experimentation platforms and pricing models across distributed Vita Mojo teams.
 

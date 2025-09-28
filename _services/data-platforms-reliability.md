@@ -3,7 +3,7 @@ title: "Data Platforms & Reliability"
 position: 1
 tagline: "Modern ELT with dbt, Airflow, and ClickHouse built for scale."
 summary: "Versioned pipelines, observability, and governance that keep metrics trustworthy across teams."
-description: "Design and deliver resilient analytics stacks drawing on founder led work across global dating platforms, Vita Mojo, and high growth marketplaces."
+description: "Design and deliver resilient analytics stacks drawing on founder led work across global marketplaces, Vita Mojo, and other high growth platforms."
 focus:
   - Data Contracts
   - Observability
