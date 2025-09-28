@@ -1,6 +1,6 @@
 ---
-title: "Fraud detection uplift for EU classifieds"
-client: "Marketplace (EU)"
+title: "Fraud detection uplift for European marketplace"
+client: "Dating Marketplace (Europe)"
 industry: "Marketplaces"
 services:
   - Experimentation, Forecasting & Applied ML
@@ -9,7 +9,7 @@ duration: "16 weeks"
 position: 1
 featured: true
 summary: "Rebuilt trust & safety analytics and launched fraud models that cut abusive users from 10% to 0.6%."
-description: "Founder led delivery end to end - from modernising the ClickHouse/dbt stack to deploying Python services with clear governance."
+description: "Founder led delivery end to end—from modernising the ClickHouse/dbt stack to deploying Python services with clear governance."
 results:
   - "Reduced fraudulent users from 10% to 0.6% at 97% precision and 86% detection."
   - "Average detection window improved by 40 days with automated takedown workflows."
@@ -23,6 +23,7 @@ Large volumes of short lived accounts made manual review ineffective. Losses, us
 - Data pipeline overhaul (dbt + Airflow + ClickHouse) to unify trust & safety signals
 - Python/Flask microservices with retraining workflow, champion/challenger evaluation, and governance
 - Shadow evaluation, playbooks, and enablement to launch safely across regions
+- Established daily standups with product, security, and leadership to keep scope tight and surface regulatory feedback.
 
 ### Outcome
 - Significant uplift in recall at the target precision alongside clear business guardrails

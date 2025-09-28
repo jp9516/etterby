@@ -2,11 +2,15 @@
 title: "When ClickHouse shines"
 ---
 
-Where columnar OLAP wins for event data and how to roll it out pragmatically.
+### Context
+Etterby Analytics introduced ClickHouse for a global dating marketplace that had stretched Postgres past its limits. Fraud analysts needed multi month lookbacks, operations demanded sub second answers, and nightly exports were masking data quality issues. The columnar store fit the use case once the team aligned the modelling approach with the fraud, pricing, and compliance questions on the roadmap.
 
-The decision to introduce ClickHouse at Xcelirate came after months of watching Postgres wheeze under customer events. Analysts needed multi month lookbacks to explain fraud patterns and the row store was not built for that scale. ClickHouse delivered sub second responses on the same hardware once the team modelled the data around the questions product and risk teams asked every week.
+### Practice
+- Stream change data capture into ClickHouse while keeping Postgres for transactional integrity.
+- Model behavioural features with dbt and orchestrate refreshes through Airflow so investigations and A/B tests referenced the same truth.
+- Pair the rollout with enablement: cheat sheets for materialised views, query templates for analysts, and SLAs agreed with leadership.
 
-It is not a silver bullet though. For transactional workloads and operational updates, Postgres remains the system of record. The winning pattern for Etterby Analytics has been to stream change data capture into ClickHouse, apply dbt for modelling, and keep Postgres for writes and mission critical OLTP. That mirrors how the team rolled out analytics at Vita Mojo where Looker and ThoughtSpot relied on consistent semantics built on top of the warehouse.
-
-Success hinges on enablement. Engineers needed cheat sheets for materialised views, analysts required query templates, and leadership wanted clear SLAs. By pairing the migration with documentation and training, the consultancy made ClickHouse an accelerator rather than a distraction.
+### Takeaways
+- Columnar OLAP delivers value when tied to clear investigative questions, not just curiosity about new tooling.
+- Documentation, training, and observability convert migrations into momentum, mirroring the ThoughtSpot and Superset enablement rolled out for Vita Mojo operators.
 
