@@ -27,3 +27,8 @@ process:
       detail: "Deliver production-ready assets with testing, observability, and documentation."
     - title: "Adopt"
       detail: "Enable teams with playbooks, training, and handover support."
+cta:
+  title: "Ready to work together?"
+  description: "Tell Etterby Analytics about the outcomes you're aiming for and map the project that gets you there."
+  label: "Contact"
+  url: "/contact/"

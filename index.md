@@ -116,7 +116,7 @@ description: "Reliable pipelines, clear metrics, and practical ML for product an
       <h2 class="text-3xl font-semibold">{{ home_insights.title }}</h2>
       <p class="mt-2 opacity-80 max-w-2xl">{{ home_insights.description }}</p>
     </div>
-    <a href="{{ home_insights.view_all.url }}" class="text-sm uppercase tracking-wide opacity-80 hover:opacity-100">{{ home_insights.view_all.label }}</a>
+    <a href="{{ home_insights.view_all.url }}" class="inline-flex items-center justify-center rounded-full bg-brandblue px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-sm transition hover:bg-brandblue/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brandblue/40">{{ home_insights.view_all.label }}</a>
   </div>
 {% endcapture %}
 {% capture insights_grid %}

@@ -16,5 +16,5 @@ insights:
   description: "Field-tested playbooks on experimentation, forecasting, and analytics leadership drawn from 11+ years in data roles."
   limit: 3
   view_all:
-    label: "See all insights"
+    label: "EXPORE ALL INSIGHTS"
     url: "/insights/"
