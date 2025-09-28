@@ -1,6 +1,6 @@
 ---
 title: "Fraud detection uplift"
-client: "Dating Marketplace (Europe)"
+client: "Dating Marketplace"
 industry: "Marketplaces"
 services:
   - Experimentation, Forecasting & Applied ML
