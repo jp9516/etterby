@@ -15,14 +15,16 @@ description: "Case studies featuring fraud reduction, revenue optimisation, and 
         <p class="opacity-90">{{ paragraph }}</p>
       {% endfor %}
     </div>
-    <div class="flex flex-wrap gap-3 text-sm">
-      {% for stat in page_content.stats %}
-        <span class="inline-flex items-baseline gap-2 rounded-full bg-white/10 px-4 py-2">
-          <span class="font-semibold text-base tracking-normal">{{ stat.value }}</span>
-          <span class="text-xs uppercase tracking-wide opacity-70">{{ stat.label }}</span>
-        </span>
-      {% endfor %}
-    </div>
+    {% if page_content.stats and page_content.stats.size > 0 %}
+      <div class="flex flex-wrap gap-3 text-sm">
+        {% for stat in page_content.stats %}
+          <span class="inline-flex items-baseline gap-2 rounded-full bg-white/10 px-4 py-2">
+            <span class="font-semibold text-base tracking-normal">{{ stat.value }}</span>
+            <span class="text-xs uppercase tracking-wide opacity-70">{{ stat.label }}</span>
+          </span>
+        {% endfor %}
+      </div>
+    {% endif %}
     <p class="text-sm opacity-80">
       <strong>{{ page_content.filters.title }}:</strong> {{ page_content.filters.items | join: ', ' }}.
       <strong>{{ page_content.process.title }}:</strong> {{ process_titles | join: ' → ' }}.
@@ -70,7 +72,7 @@ description: "Case studies featuring fraud reduction, revenue optimisation, and 
 
 {% if page_content.cta %}
   {% capture work_cta %}
-    <div class="max-w-2xl space-y-4 text-center mx-auto">
+    <div class="max-w-2xl space-y-4 mx-auto">
       <h2 class="text-2xl font-semibold">{{ page_content.cta.title }}</h2>
       <p class="text-sm md:text-base opacity-80">{{ page_content.cta.description }}</p>
       <a href="{{ page_content.cta.url }}" class="inline-flex items-center justify-center rounded-full bg-brandblue px-8 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-brandblue/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brandblue/40">{{ page_content.cta.label }}</a>

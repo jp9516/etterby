@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "About"
-description: "Learn how Etterby Analytics operates, the founder-led principles behind the consultancy, and the outcomes delivered for product and operations teams."
+description: "Learn how Etterby Analytics operates, the founder led principles behind the consultancy, and the outcomes delivered for product and operations teams."
 ---
 {% assign page_content = site.data.about_page %}
 

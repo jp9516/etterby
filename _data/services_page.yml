@@ -2,9 +2,9 @@ hero:
   eyebrow: "How Etterby Analytics helps"
   title: "Embedded analytics leadership for complex decisions"
   description:
-    - "Etterby Analytics embeds founder-led analytics leadership with your product, operations, and finance teams to deliver the data foundations, decision science, and enablement UK-first companies need to move faster."
+    - "Etterby Analytics embeds founder led analytics leadership with your product, operations, and finance teams to deliver the data foundations, decision science, and enablement UK first companies need to move faster."
     - "On-site sessions across Cumbria pair with remote collaboration for organisations across the UK and select global partners, with engagements scoped around measurable outcomes such as fraud reduction, revenue uplift, or adoption."
-    - "Recent work spans GA4 instrumentation, self-serve dashboard design, and executive storytelling for global restaurant and retail brands."
+    - "Recent work spans GA4 instrumentation, self serve dashboard design, and executive storytelling for global restaurant and retail brands."
 service_models:
   title: "Common engagement patterns"
   items:
@@ -26,7 +26,7 @@ collaboration:
     - "Security, access, and documentation handled in your existing tooling"
 ctas:
   primary:
-    label: "Discuss a project"
+    label: "Contact"
     url: "/contact/"
   secondary:
     label: "See recent work"

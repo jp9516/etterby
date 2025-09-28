@@ -1,9 +1,9 @@
 ---
-title: "Self-Service Dashboards & Embedded Analytics"
+title: "Self Service Dashboards & Embedded Analytics"
 position: 4
 tagline: "Design KPI stories and workflows that teams return to every day."
-summary: "Craft ThoughtSpot, Power BI, and Hex experiences that answer follow-up questions and unlock adoption."
-description: "Built from founder-led delivery for Subway franchisees, Vita Mojo operators, and private equity portfolio reviews."
+summary: "Craft ThoughtSpot, Power BI, and Hex experiences that answer follow up questions and unlock adoption."
+description: "Built from founder led delivery for Subway franchisees, Vita Mojo operators, and private equity portfolio reviews."
 focus:
   - Dashboard Design
   - Embedded Workflows
@@ -18,7 +18,7 @@ focus:
 **Outcomes**
 - Executive and operator dashboards that drive weekly and daily rituals across teams
 - Embedded analytics in portals and products with clear ownership, release plans, and usage telemetry
-- Enablement assets that teach teams how to self-serve, explore, and request enhancements effectively
+- Enablement assets that teach teams how to self serve, explore, and request enhancements effectively
 
 **Stack**
 ThoughtSpot, Power BI, Hex, Looker, Superset, Mode

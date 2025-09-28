@@ -8,23 +8,17 @@ filters:
   title: "What Etterby Analytics delivers"
   items:
     - "Data platforms & reliability"
-    - "Decision-ready analytics"
+    - "Decision ready analytics"
     - "Experimentation & forecasting"
     - "Revenue optimisation"
-stats:
-  - label: "Median engagement"
-    value: "12 weeks"
-  - label: "Revenue uplift delivered"
-    value: "+10% daily revenue"
-  - label: "Fraud reduction achieved"
-    value: "10% → 0.6%"
+stats: []
 process:
   title: "A simple, accountable process"
   steps:
     - title: "Frame"
       detail: "Clarify the decision, success metrics, and constraints with stakeholders."
     - title: "Ship"
-      detail: "Deliver production-ready assets with testing, observability, and documentation."
+      detail: "Deliver production ready assets with testing, observability, and documentation."
     - title: "Adopt"
       detail: "Enable teams with playbooks, training, and handover support."
 cta:

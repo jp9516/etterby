@@ -1,39 +1,39 @@
 hero:
   eyebrow: "About Etterby Analytics"
-  title: "Founder-led analytics for teams that need momentum"
+  title: "Founder led analytics for teams that need momentum"
   description:
-    - "Etterby Analytics is a Carlisle-based consultancy partnering with founders, product leaders, and operators who need sharper decisions without adding headcount."
+    - "Etterby Analytics is a Carlisle based consultancy partnering with founders, product leaders, and operators who need sharper decisions without adding headcount."
     - "Every engagement is led by the founder, bringing 10+ years of experimentation, forecasting, and BI leadership directly into your roadmap so measurable progress shows up fast."
 narrative:
   intro:
-    - "Founder-led companies like Basecamp and Stripe tell simple stories: why they exist, how they work, and the proof that it matters. Etterby follows the same playbook—focused on clarity, accountability, and outcomes from the very first working session."
+    - "Founder led companies like Basecamp and Stripe tell simple stories: why they exist, how they work, and the proof that it matters. Etterby follows the same playbook—focused on clarity, accountability, and outcomes from the very first working session."
   sections:
     - title: "Why Etterby exists"
       body:
         - "Too many analytics programmes stall because strategy and delivery are split across agencies, vendors, and internal teams. Etterby was created to be the senior partner who ships the work and stays present until results are in motion."
     - title: "How the work happens"
       body:
-        - "Each project begins with a working session to surface the decisions you need to make. From there, sprints deliver production-ready models, instrumentation, and enablement materials—not slide decks. The same person designs the solution, implements it, and equips your team to run it."
+        - "Each project begins with a working session to surface the decisions you need to make. From there, sprints deliver production ready models, instrumentation, and enablement materials — not slide decks. The same person designs the solution, implements it, and equips your team to run it."
     - title: "What you can expect"
       body:
-        - "Expect transparent plans, weekly momentum, and clear metrics that show progress. Engagements scale from a few focused weeks to multi-quarter partnerships, always with a founder at the table instead of a rotating agency bench."
+        - "Expect transparent plans, weekly momentum, and clear metrics that show progress. Engagements scale from a few focused weeks to multi quarter partnerships, always with a founder at the table instead of a rotating agency bench."
 pillars:
   title: "Three pillars of every engagement"
   items:
-    - title: "Evidence-first decisions"
+    - title: "Evidence first decisions"
       description: "Quantified baselines and measurable targets anchor every recommendation, replacing guesswork with confidence."
     - title: "Momentum through delivery"
       description: "Working software, dashboards, and playbooks ship continuously so your teams can act before the quarter ends."
     - title: "Enablement that sticks"
-      description: "Internal teams leave with training, governance, and documentation that keeps capability in-house after handover."
+      description: "Internal teams leave with training, governance, and documentation that keeps capability in house after handover."
 proof:
   title: "Signals the approach works"
   points:
     - "Dropped fraudulent activity from 10% to 0.6% for a global marketplace while maintaining 97% precision."
     - "Lifted daily revenue by 10% through pricing experimentation for a hospitality group."
-    - "Rolled out ThoughtSpot across enterprise restaurant brands, unlocking self-serve analytics adoption."
+    - "Rolled out ThoughtSpot across enterprise restaurant brands, unlocking self serve analytics adoption."
 founder_quote:
-  quote: "Clients don't need another deck - they need a senior partner who ships the work and leaves the team stronger than they arrived."
+  quote: "Clients don't need another deck — they need a senior partner who ships the work and leaves the team stronger than they arrived."
   name: "Founder, Etterby Analytics"
 cta:
   title: "Ready to build momentum?"
