@@ -3,6 +3,8 @@ title: "Etterby Analytics"
 description: "Premium, minimal, outcomes-first analytics consulting. Pipelines, metrics, and ML that ship and stick."
 url: "https://etterby.com"  # set to https://etterby.com when live
 baseurl: ""  # set to /analytics only if using subpath
+google_analytics:
+  measurement_id: G-8T9EL4DVTW
 markdown: kramdown
 theme: null
 plugins: []
