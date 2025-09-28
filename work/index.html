@@ -67,3 +67,14 @@ description: "Case studies featuring fraud reduction, revenue optimisation, and 
   </div>
 {% endcapture %}
 {% include section.html tone="blue" padding="py-16" content=work_grid %}
+
+{% if page_content.cta %}
+  {% capture work_cta %}
+    <div class="max-w-2xl space-y-4 text-center mx-auto">
+      <h2 class="text-2xl font-semibold">{{ page_content.cta.title }}</h2>
+      <p class="text-sm md:text-base opacity-80">{{ page_content.cta.description }}</p>
+      <a href="{{ page_content.cta.url }}" class="inline-flex items-center justify-center rounded-full bg-brandblue px-8 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-brandblue/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-brandblue/40">{{ page_content.cta.label }}</a>
+    </div>
+  {% endcapture %}
+  {% include section.html tone="frost" padding="py-16" content=work_cta %}
+{% endif %}
