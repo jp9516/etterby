@@ -2,10 +2,15 @@
 title: "Designing dashboards people actually use"
 ---
 
-Wireframes and hero metrics are table stakes. The dashboards that stick pair narrative, diagnostics, and ritual.
+### Context
+Wireframes and hero metrics are table stakes. The dashboards that stick pair narrative, diagnostics, and ritual. Etterby Analytics developed this approach while leading analytics for Subway franchisees and Vita Mojo operators.
 
-While leading analytics for Subway franchisees and Vita Mojo operators, Etterby Analytics started every build by interviewing the people opening the dashboard each morning. Their questions shaped the first three tiles, the comparisons, and the alerting rules. Without that context the prettiest layout still sent users back to spreadsheets.
+### Practice
+- Interview the people opening the dashboard each morning so their questions shape the first tiles, comparisons, and alerting rules.
+- Keep performance and trust high by investing in dbt models, caching, observability, and finance-aligned definitions across ThoughtSpot, Power BI, and Hex.
+- Launch with release notes, walkthroughs, telemetry, and a request playbook so adoption feels like a product, not a deliverable.
 
-The second ingredient is performance. ThoughtSpot, Power BI, and Hex are only self serve if they stay sub second and the data definitions line up with finance. That meant investing as much time in dbt models, caching, and observability as in colours and chart types.
-
-Finally the consultancy handed over more than a link. Every launch included release notes, loom walk throughs, telemetry, and a playbook for how to request tweaks. Adoption is a product, not a deliverable, and treating it like one turns dashboards into decision engines.
+### Takeaways
+- User interviews translate into interfaces that replace spreadsheets rather than add another report.
+- Operational excellence on the data platform side is inseparable from dashboard success.
+- Enablement and feedback loops turn dashboards into decision engines for distributed teams.

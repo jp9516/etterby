@@ -1,6 +1,6 @@
 ---
 title: "Price optimisation for marketplace growth"
-client: "Xcelirate"
+client: "Global Dating Marketplace"
 industry: "Marketplaces"
 services:
   - Revenue & Lifecycle Intelligence
@@ -23,6 +23,7 @@ Pricing decisions relied on manual spreadsheets, producing volatile margins and 
 - Defined the pricing hypotheses, guardrails, and success metrics with product and finance.
 - Built demand elasticity models in Python with dbt powered feature pipelines feeding Superset dashboards.
 - Ran controlled experiments to validate the models before automating weekly recommendations.
+- Hired and trained analysts to own pricing playbooks, documenting workflows in Confluence for iterative improvements.
 
 ### Outcome
 - Revenue teams received trusted forecasts and recommendations via scheduled reporting and ThoughtSpot search.

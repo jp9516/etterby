@@ -2,11 +2,16 @@
 title: "From heuristics to ML"
 ---
 
-Shadow evaluation, thresholds, and change management that sticks.
+### Context
+Marketplaces and regulated gaming operators asked Etterby Analytics to modernise rule based fraud controls without risking good customers. Years of heuristics built by operations teams could not scale with attack volumes. The consultancy rebuilt the controls as Python services and ran them alongside the legacy approach to understand gaps.
 
-When marketplaces asked for machine learning to replace the heuristics their operations teams had curated for years, Etterby Analytics pushed for quiet launches first. The team rebuilt the checks as Python services, ran them alongside the legacy rules, and compared every alert. That shadow period exposed blind spots without taking unnecessary risks.
+### Practice
+- Shadow test the machine learning service until precision and recall meet the thresholds agreed with finance, compliance, and trust & safety leaders.
+- Document retraining cadences, rollback paths, and audit trails so regulators and stakeholders can see how decisions are made.
+- Involve frontline reviewers in feature design and override policies, mirroring the collaboration established at The Stars Group and Grosvenor Casinos.
 
-Only once precision and recall cleared the thresholds agreed with finance and compliance did the consultancy recommend a full go live. Documentation, retraining cadences, and rollback paths were written before the switch. Those controls are the reason the fraud programmes led at Xcelirate and The Stars Group hit targets without disrupting good customers.
-
-Technology is the easy part. The harder work is showing frontline teams how their expertise shaped the model and giving them avenues to override with reason. Working sessions, release notes, and a cadence for feedback help the change land. The same playbook translated to deploying experimentation platforms and pricing models across distributed Vita Mojo teams.
+### Takeaways
+- Quiet launches expose blind spots early and build confidence before deprecating heuristics.
+- Governance, change management, and training are the differentiators that kept fraud programmes for the global dating marketplace and online gambling brands on target.
+- The same playbook supports experimentation platforms and pricing models across distributed Vita Mojo teams.
 

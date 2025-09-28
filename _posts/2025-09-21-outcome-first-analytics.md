@@ -2,11 +2,15 @@
 title: "Outcome first analytics"
 ---
 
-Prioritise decisions and measurable change over tooling debates. A simple playbook that aligns data work to outcomes.
+### Context
+Prioritise decisions and measurable change over tooling debates. Etterby Analytics anchors every engagement around the commercial metrics that matter this quarter, the guardrails that cannot move, and the accountable owners. That clarity stops scope creep before it starts and keeps analysts from chasing dashboard vanity projects.
 
-Every engagement starts with the same exercise the founder runs with product and operations leaders across Xcelirate, Vita Mojo, and other partners. The team lists the commercial metrics that matter this quarter, the operational guardrails that cannot move, and the people accountable for each. That clarity stops scope creep before it starts and keeps analysts from chasing dashboard vanity projects.
+### Practice
+- Map the smallest analytical delivery that creates feedback: fraud funnel instrumentation and cash exposure forecasting for the global dating marketplace, or executive scorecards to guide Vita Mojo’s product adoption.
+- Set baselines, owners, and iteration plans for each increment so progress is visible week by week.
+- Pair delivery with enablement—shadowing sessions, playbooks, and governance tables—so internal teams can reproduce results without external dependency.
 
-From there Etterby Analytics maps the smallest analytical delivery that creates feedback. At Xcelirate that meant instrumenting fraud funnels and forecasting the exposure in cash terms. At Vita Mojo it was an executive scorecard that made adoption progress visible week by week. Each increment has an owner, a baseline, and a plan to iterate if the first release only gets part of the way.
-
-The last layer is enablement so teams can continue without relying on external support. Shadowing sessions, playbooks, and simple governance tables make sure context is shared and decisions are reproducible. It is the same approach that helped ThoughtSpot adoption stick with enterprise brands and kept finance, product, and operations aligned around the same numbers.
+### Takeaways
+- Framing analytics work around decisions aligns finance, product, and operations without endless steering meetings.
+- Enablement and governance keep improvements alive after the consultancy exits, a lesson reinforced across marketplaces, restaurant groups, and online gaming operators.
 
