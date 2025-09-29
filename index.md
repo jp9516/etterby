@@ -1,12 +1,13 @@
 ---
 layout: default
-title: "Analytics that drive outcomes"
+title: "Etterby Analytics | Data Consulting"
+hero_title: "Analytics that drive outcomes."
 description: "Reliable pipelines, clear metrics, and practical ML for product and operations teams."
 ---
 {% assign home = site.data.home %}
 {% capture hero_block %}
   <div class="space-y-8">
-    <h1 class="text-5xl md:text-6xl font-semibold leading-tight">Analytics that drive outcomes.</h1>
+    <h1 class="text-5xl md:text-6xl font-semibold leading-tight">{{ page.hero_title | default: 'Analytics that drive outcomes.' }}</h1>
     <p class="text-lg max-w-2xl">
       Etterby Analytics is a Carlisle based consultancy that helps product and operations teams across Cumbria, throughout the UK, and select global partners ship reliable data pipelines, clear metrics, and practical ML – without drama.
     </p>
