@@ -16,6 +16,7 @@ description: "Start a conversation with Etterby Analytics about analytics, exper
     <input type="email" name="email" placeholder="Work email" class="bg-white border border-brandblack/10 dark:bg-brandblack/70 dark:border-white/20 rounded-lg px-4 py-3 focus:border-brandblue focus:outline-none transition" required>
     <input type="text" name="company" placeholder="Company" class="bg-white border border-brandblack/10 dark:bg-brandblack/70 dark:border-white/20 rounded-lg px-4 py-3 md:col-span-2 focus:border-brandblue focus:outline-none transition">
     <textarea name="message" placeholder="What do you need?" class="bg-white border border-brandblack/10 dark:bg-brandblack/70 dark:border-white/20 rounded-lg px-4 py-3 md:col-span-2 focus:border-brandblue focus:outline-none transition" rows="5" required></textarea>
+    <p class="text-xs opacity-70 md:col-span-2">By submitting this enquiry, you agree that we may use your details to respond to your request. See our <a href="/privacy/" class="underline">Privacy Policy</a>.</p>
     <button type="submit" class="bg-brandyellow text-brandblack font-semibold rounded-xl px-6 py-3 md:col-span-2">Send</button>
   </form>
 {% endcapture %}

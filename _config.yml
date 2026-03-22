@@ -40,6 +40,9 @@ defaults:
 company:
   name: "Etterby Analytics Ltd"
   legal_name: "Etterby Analytics Ltd"
+  registration_number: "16104273"
+  registered_in: "England and Wales"
+  registered_office: "3 Etterby Terrace, Carlisle, United Kingdom, CA3 9JE"
   url: "https://etterby.com"
   email: "hello@etterby.com"
   description: "Independent analytics consultancy delivering data platforms, experimentation, and forecasting."

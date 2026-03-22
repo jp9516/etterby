@@ -2,6 +2,7 @@
 title: "Terms & Conditions"
 description: "Website terms for Etterby Analytics covering use of content, engagements, and limitations of liability."
 ---
+{% assign company = site.company %}
 {% capture terms_content %}
   <div class="space-y-6">
     <div class="space-y-3">
@@ -44,7 +45,9 @@ description: "Website terms for Etterby Analytics covering use of content, engag
       <p class="opacity-90">These terms are governed by the laws of England and Wales. Disputes will be subject to the exclusive jurisdiction of the English courts.</p>
     </div>
 
-    <p class="opacity-90">© {{ site.time | date: "%Y" }} Etterby Analytics Ltd. All rights reserved.</p>
+    <div class="space-y-2">
+      <p class="opacity-90">© {{ site.time | date: "%Y" }} {{ company.legal_name }}. All rights reserved.</p>
+    </div>
   </div>
 {% endcapture %}
 {% include section.html tone="frost" padding="py-16" container_class="max-w-3xl mx-auto px-6" content=terms_content %}

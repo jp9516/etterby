@@ -26,7 +26,7 @@ Static site built with Jekyll for GitHub Pages.
 1. Visit <https://analytics.google.com> and sign in with your personal Google account. A free GA4 property is included in every account.
 2. Create a new property (or reuse an existing one) and follow the setup wizard until you reach the "Data streams" step. Select "Web" and enter the production URL (e.g. `https://etterby.com`).
 3. Copy the Measurement ID that begins with `G-` from the stream details.
-4. Update `_config.yml` and set `google_analytics.measurement_id` to the copied ID (the production site currently uses `G-8T9EL4DVTW`). When the site builds, the default layout automatically injects the Google tag snippet.
+4. Update `_config.yml` and set `google_analytics.measurement_id` to the copied ID (the production site currently uses `G-8T9EL4DVTW`). The Google tag now loads only after a visitor explicitly accepts analytics cookies.
 
 ## Edit content
 - Homepage: `index.md`
